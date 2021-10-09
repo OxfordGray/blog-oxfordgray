@@ -4,6 +4,44 @@
   
   
   <entry>
+    <title>关于centos虚拟机创建后只有命令行模式解决办法</title>
+    <link href="/2021/10/09/%E5%85%B3%E4%BA%8Ecentos%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA%E5%90%8E%E5%8F%AA%E6%9C%89%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A8%A1%E5%BC%8F%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <url>/2021/10/09/%E5%85%B3%E4%BA%8Ecentos%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA%E5%90%8E%E5%8F%AA%E6%9C%89%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A8%A1%E5%BC%8F%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<p>刚装了CentOS，但是启动后只有命令行界面</p><p><img src="https://i.loli.net/2021/10/09/jvLnw2Js7Wo1rVl.png" alt="image-20211009213020911"></p><p>输入</p><p><code>systemctl get-default</code></p><p>查看默认启动方式，如果为图上所示，代表默认启动方式为命令行模式，此时修改然后重启即可</p><p><img src="https://i.loli.net/2021/10/09/nkUNIAiLsTdHFtu.png" alt="image-20211009213134000"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs text">#设置为图形化界面模式<br>systemctl set-default graphical.target<br></code></pre></td></tr></table></figure><p><img src="https://i.loli.net/2021/10/09/I9GQznde6VyP4pK.png" alt="image-20211009213346130"></p><p><strong>还有一种可能，安装的时候没有安装图形界面</strong></p><p><code>sudo yum groupinstall &quot;GNOME Desktop&quot; &quot;Graphical Administration Tools</code></p><p>此时通过yum安装桌面，再重启即可</p><p><img src="https://i.loli.net/2021/10/09/U4zDyuL2QKOvHbe.png" alt="image-20211009214450439"></p><p>成功</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>问题解决</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>保姆教程安装虚拟机</title>
+    <link href="/2021/10/09/%E4%BF%9D%E5%A7%86%E6%95%99%E7%A8%8B%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <url>/2021/10/09/%E4%BF%9D%E5%A7%86%E6%95%99%E7%A8%8B%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
+    
+    <content type="html"><![CDATA[<p><strong>虚拟机安装过程：</strong></p><p>1）准备Ubuntu或者centOs系统镜像（推荐官网获取：<a href="https://ubuntu.com/">ubuntu</a> <a href="https://www.centos.org/download/">centOs</a>）</p><p><img src="https://i.loli.net/2021/10/09/4NnqkxTY8ZBIuvc.png" alt="image-20211009205914751"></p><p><img src="https://i.loli.net/2021/10/09/P6ptbqDS4FVAEwH.png" alt="image-20211009205817030"></p><p>2)下载好镜像，打开VMware点击创建新的虚拟机</p><p><img src="https://i.loli.net/2021/10/09/wYQJfl7XiezHySN.png" alt="image-20211009205725116"></p><p>3）跟着引导操作</p><p><img src="https://i.loli.net/2021/10/09/j5heDdCBmJ9EAFR.png" alt="image-20211009210008134"></p><p><img src="https://i.loli.net/2021/10/09/wO9UvFHjS1asmBh.png" alt="image-20211009210052050"></p><p><img src="https://i.loli.net/2021/10/09/JvSge72Vfj4R8mG.png" alt="image-20211009210117821"></p><p><img src="https://i.loli.net/2021/10/09/1QfXjFTOCtqySgo.png" alt="image-20211009210225262"></p><center>这里建议选择30G</center><p><img src="https://i.loli.net/2021/10/09/PGe1Ho6nyq4N3bA.png" alt="image-20211009210540500"></p><p>4）等待虚拟机安装，这里选择Install CentOS 7</p><p><img src="https://i.loli.net/2021/10/09/vibKYRc9HCtSkUV.png" alt="image-20211009210758320"></p><p>5)选择语言</p><p><img src="https://i.loli.net/2021/10/09/ihsxStwBoD8GU6v.png" alt="image-20211009210653252"></p><p>6)选择一下系统设置</p><p><img src="https://i.loli.net/2021/10/09/gQaljiVSPBpGzfM.png" alt="image-20211009211138613"></p><p>7)配置一下root用户，然后等待安装完成，需要注意的是，如果你的密码安全等级不够高，需要点击两下完成</p><p><img src="https://i.loli.net/2021/10/09/qhDNZKB7daE6fJ9.png" alt="image-20211009211251254"></p><p>8)等待安装完成后点击一下重启就大功告成拉！</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>教程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>利用hexo搭建一个githubpage博客</title>
     <link href="/2021/10/08/%E5%88%A9%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAgithubpage%E5%8D%9A%E5%AE%A2/"/>
     <url>/2021/10/08/%E5%88%A9%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAgithubpage%E5%8D%9A%E5%AE%A2/</url>
