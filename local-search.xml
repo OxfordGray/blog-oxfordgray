@@ -4,7 +4,32 @@
   
   
   <entry>
-    <title>新电脑必装环境</title>
+    <title>提高coding速度的小技巧</title>
+    <link href="/2021/10/21/%E6%8F%90%E9%AB%98coding%E9%80%9F%E5%BA%A6%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <url>/2021/10/21/%E6%8F%90%E9%AB%98coding%E9%80%9F%E5%BA%A6%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    
+    <content type="html"><![CDATA[<p>提高coding速度的一个重要关键就是：</p><p><strong>少用鼠标</strong></p><p>每当你使用一次鼠标，你敲代码的速度都会慢下来，所以本篇文章就是围绕在使用ide编程的时候如何减少使用鼠标的次数</p><p>首先就是手放在键盘上的位置</p><p><img src="https://i.loli.net/2021/10/21/sZwrSMv1NOYzTL5.png" alt="image-20211021205356135"></p><p>当你什么都不敲的时候，双手的两根食指应该放在F 和J上面，这样可以覆盖的面尽量的广，不用在需要敲击某个字母的时候你的手还需要大量的移动</p><h6 id="还有就是尽量使用一些快捷键来避免鼠标操作"><a href="#还有就是尽量使用一些快捷键来避免鼠标操作" class="headerlink" title="还有就是尽量使用一些快捷键来避免鼠标操作"></a>还有就是尽量使用一些快捷键来避免鼠标操作</h6><table><thead><tr><th><strong>shift + ←或→</strong></th><th><strong>逐个选中字符</strong></th></tr></thead><tbody><tr><td><strong>ctrl  + ←或→</strong></td><td><strong>逐词移动光标</strong></td></tr><tr><td><strong>ctrl + shift + ←或→</strong></td><td><strong>逐词选中字符(极其常用)</strong></td></tr><tr><td><strong>Home键</strong></td><td><strong>将光标移动到行开头</strong></td></tr><tr><td><strong>End键</strong></td><td><strong>将光标移动到到行结尾(常用 配合shift+↑或↓)</strong></td></tr><tr><td><strong>Shift + Home</strong></td><td><strong>从 光标的位置开始至行开头 选中文本</strong></td></tr><tr><td><strong>Shift + End</strong></td><td><strong>从 光标的位置开始至行结尾 选中文本</strong></td></tr><tr><td><strong>Shift+↑或↓</strong></td><td><strong>选中一行代码(极其常用)</strong></td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技巧</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>新电脑搭建开发环境需求列表</title>
     <link href="/2021/10/14/%E6%96%B0%E7%94%B5%E8%84%91%E5%BF%85%E8%A3%85%E7%8E%AF%E5%A2%83/"/>
     <url>/2021/10/14/%E6%96%B0%E7%94%B5%E8%84%91%E5%BF%85%E8%A3%85%E7%8E%AF%E5%A2%83/</url>
     
@@ -29,37 +54,61 @@
   
   
   <entry>
-    <title>typora+picgo最好的文档伙伴安装教程</title>
+    <title>typora实时渲染的md语法编辑器</title>
     <link href="/2021/10/14/typora-picgo%E6%9C%80%E5%A5%BD%E7%9A%84%E6%96%87%E6%A1%A3%E4%BC%99%E4%BC%B4%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
     <url>/2021/10/14/typora-picgo%E6%9C%80%E5%A5%BD%E7%9A%84%E6%96%87%E6%A1%A3%E4%BC%99%E4%BC%B4%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
     
     <content type="html"><![CDATA[<p>每当你打开一个github项目的时候，都会看到数不胜数的.md文件，md即<a href="https://markdown.com.cn/basic-syntax/">markdown</a></p><p>而编辑markdown的编辑器与浏览软件，最棒的当然是<a href="https://typora.io/">typora</a>了</p><p><img src="C:\Users\simple\AppData\Roaming\Typora\typora-user-images\image-20211015154711209.png" alt="image-20211015154711209"></p>]]></content>
     
     
+    <categories>
+      
+      <category>软件安装</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>软件</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>启用CDN加速服免费加速你的个人小博客</title>
+    <title>CDN加速你的个人小博客</title>
     <link href="/2021/10/14/%E5%90%AF%E7%94%A8CDN%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%85%8D%E8%B4%B9%E5%8A%A0%E9%80%9F%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%B0%8F%E5%8D%9A%E5%AE%A2/"/>
     <url>/2021/10/14/%E5%90%AF%E7%94%A8CDN%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%85%8D%E8%B4%B9%E5%8A%A0%E9%80%9F%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%B0%8F%E5%8D%9A%E5%AE%A2/</url>
     
     <content type="html"><![CDATA[<p><img src="C:\Users\simple\AppData\Roaming\Typora\typora-user-images\image-20211014133014016.png" alt="image-20211014133014016"></p><p><img src="C:\Users\simple\AppData\Roaming\Typora\typora-user-images\image-20211014133100482.png" alt="image-20211014133100482"></p>]]></content>
     
     
+    <categories>
+      
+      <category>使用教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>CDN</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>关于centos虚拟机创建后只有命令行模式解决办法</title>
+    <title>centos启动后只有命令行模式解决办法</title>
     <link href="/2021/10/09/%E5%85%B3%E4%BA%8Ecentos%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA%E5%90%8E%E5%8F%AA%E6%9C%89%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A8%A1%E5%BC%8F%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
     <url>/2021/10/09/%E5%85%B3%E4%BA%8Ecentos%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA%E5%90%8E%E5%8F%AA%E6%9C%89%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A8%A1%E5%BC%8F%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<p>刚装了CentOS，但是启动后只有命令行界面</p><p><img src="https://i.loli.net/2021/10/09/jvLnw2Js7Wo1rVl.png" alt="image-20211009213020911"></p><p>输入</p><p><code>systemctl get-default</code></p><p>查看默认启动方式，如果为图上所示，代表默认启动方式为命令行模式，此时修改然后重启即可</p><p><img src="https://i.loli.net/2021/10/09/nkUNIAiLsTdHFtu.png" alt="image-20211009213134000"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs text">#设置为图形化界面模式<br>systemctl set-default graphical.target<br></code></pre></td></tr></table></figure><p><img src="https://i.loli.net/2021/10/09/I9GQznde6VyP4pK.png" alt="image-20211009213346130"></p><p><strong>还有一种可能，安装的时候没有安装图形界面</strong></p><p><code>sudo yum groupinstall &quot;GNOME Desktop&quot; &quot;Graphical Administration Tools</code></p><p>此时通过yum安装桌面，再重启即可</p><p><img src="https://i.loli.net/2021/10/09/U4zDyuL2QKOvHbe.png" alt="image-20211009214450439"></p><p>成功</p>]]></content>
+    <content type="html"><![CDATA[<p>刚装了CentOS，但是启动后只有命令行界面</p><p><img src="https://i.loli.net/2021/10/09/jvLnw2Js7Wo1rVl.png" alt="image-20211009213020911"></p><p>输入</p><p><code>systemctl get-default</code></p><p>查看默认启动方式，如果为图上所示，代表默认启动方式为命令行模式，此时修改然后重启即可</p><p><img src="https://i.loli.net/2021/10/09/nkUNIAiLsTdHFtu.png" alt="image-20211009213134000"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs text">#设置为图形化界面模式<br>systemctl set-default graphical.target<br></code></pre></td></tr></table></figure><p><img src="https://i.loli.net/2021/10/09/I9GQznde6VyP4pK.png" alt="image-20211009213346130"></p><p><strong>还有一种可能，安装的时候没有安装图形界面</strong></p><p><code>sudo yum groupinstall &quot;GNOME Desktop&quot; &quot;Graphical Administration Tools</code></p><p><code>sudo reboot</code></p><p>此时通过yum安装桌面，再重启即可</p><p><img src="https://i.loli.net/2021/10/09/U4zDyuL2QKOvHbe.png" alt="image-20211009214450439"></p><p>成功</p>]]></content>
     
     
     <categories>
@@ -80,7 +129,7 @@
   
   
   <entry>
-    <title>保姆教程安装虚拟机</title>
+    <title>虚拟机简易安装教程</title>
     <link href="/2021/10/09/%E4%BF%9D%E5%A7%86%E6%95%99%E7%A8%8B%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     <url>/2021/10/09/%E4%BF%9D%E5%A7%86%E6%95%99%E7%A8%8B%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
     
