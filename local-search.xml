@@ -4,6 +4,32 @@
   
   
   <entry>
+    <title>软件工程笔记</title>
+    <link href="/2021/11/28/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <url>/2021/11/28/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h2 id="第一章-软件的本质"><a href="#第一章-软件的本质" class="headerlink" title="第一章 软件的本质"></a>第一章 软件的本质</h2><p>软件是：<br>    (1)指令的集合(计算机程序)，通过执行这些指令来满足预期的特征、功能和性能需求；<br>    (2)数据结构，使得程序可以合理的利用信息；<br>    (3)文档描述，用来描述程序操作和使用。</p><p>意外效益法则：某些新科技的发明创造会给其他一些看似无关的技术领域、商业企业、公众甚至整个社会文化带来深远而出人意料的影响和作用。这就是所谓的“意外效应法则”（law of unintended consequences）。</p><h5 id="遗留软件"><a href="#遗留软件" class="headerlink" title="遗留软件"></a>遗留软件</h5><p>​    为什么一定要变更？</p><p>​        软件必须进行适应性调整，以满足新的计算环境和技术的需求。<br>​        软件必须升级以实现新的商业需求。<br>​        软件必须扩展使之具有与更多现代系统和数据库的互操作能力。<br>​        软件必须进行改建使之能适应多样化的网络环境。</p><h5 id="WebApps的特性"><a href="#WebApps的特性" class="headerlink" title="WebApps的特性"></a>WebApps的特性</h5><ul><li><strong>网络密集型</strong>：WebApp 驻留在网络上，服务于不同客户群体的需求。</li><li><strong>并发性</strong>：大量用户可能同时访问WebApp 。</li><li><strong>无法预知的负载量</strong>：WebApp的用户数量每天都可能有数量级的变化。</li><li><strong>性能</strong>： 如果一位WebApp用户必须等待很长时间（访问、服务器端处理、客户端格式化显示），该用户就可能转向其他地方。</li><li><strong>可用性</strong>：尽管期望百分百的可用性是不切实际的，但是对于热门的WebApp，用户通常要求能够24/7/365（全天候）访问。 </li><li><strong>数据驱动</strong>：许多WebApp的主要功能是使用超媒体向最终用户提供文本、图片、音频及视频内容。</li><li><strong>内容敏感性</strong>：内容的质量和艺术性仍然很大程度上决定了WebApp的质量。</li><li><strong>持续演化</strong>：传统的应用软件是随一系列规划好的时间间隔发布而演化的，而Web应用则持续地演化。</li><li><strong>即时性</strong>：尽管即时性—也就是将软件尽快推向市场的迫切需求—是很多应用领域的特点，然而将WebApp投入市场可能只是几天或几周的事。</li><li><strong>安全性</strong>：由于WebApp是通过网络访问来使用的，因此要限制访问的最终用户，即使可能也非常困难。</li><li><strong>美观性</strong>：不可否认，WebApp的用户界面和外观很有吸引力。</li></ul><h4 id="关键概念：应用领域、云计算、失效曲线、遗留软件、移动App、产品线、软件定义、软件问题、软件的本质、磨损、WebApp"><a href="#关键概念：应用领域、云计算、失效曲线、遗留软件、移动App、产品线、软件定义、软件问题、软件的本质、磨损、WebApp" class="headerlink" title="关键概念：应用领域、云计算、失效曲线、遗留软件、移动App、产品线、软件定义、软件问题、软件的本质、磨损、WebApp"></a>关键概念：应用领域、云计算、失效曲线、遗留软件、移动App、产品线、软件定义、软件问题、软件的本质、磨损、WebApp</h4><h2 id="第二章-软件工程"><a href="#第二章-软件工程" class="headerlink" title="第二章 软件工程"></a>第二章 软件工程</h2><p><strong>IEEE 定义：</strong><br>软件工程是：</p><p>（1）将系统化的、规范的、可量化的方法应用于软件的开发、运行和维护，即将工程化方法应用于软件。</p><p>（2）在(1)中所述方法的研究。</p><h4 id="框架活动"><a href="#框架活动" class="headerlink" title="框架活动"></a>框架活动</h4><ul><li><p>沟通</p></li><li><p>策划</p></li><li><p>建模</p><pre><code>-需求分析-设计</code></pre></li><li><p>构建</p><pre><code>-代码生成-测试</code></pre></li><li><p>部署</p></li></ul><h4 id="过程的适应性调整"><a href="#过程的适应性调整" class="headerlink" title="过程的适应性调整"></a>过程的适应性调整</h4><p>不同项目所采取的项目过程可能有很大的不同。这些不同主要体现在以下几个方面：</p><p>​    -活动、动作和任务的总体流程，以及它们之间相互依赖关系<br>​    -在每一个框架活动中，动作和任务细化的程度<br>​    -工作产品的定义和要求的程度<br>​    -质量保证活动应用的方式<br>​    -项目跟踪和控制活动应用的方式<br>​    -过程描述的详细程度和严谨程度<br>​    -客户和利益相关者对项目参与的程度<br>​    -软件团队所赋予的自主权<br>​    -队伍组织和角色明确程度</p><h4 id="关键概念-框架活动、通用原则、原则、问题解决、SafeHome、软件工程-定义、层次、实践-、软件神话、软件过程、普适性活动"><a href="#关键概念-框架活动、通用原则、原则、问题解决、SafeHome、软件工程-定义、层次、实践-、软件神话、软件过程、普适性活动" class="headerlink" title="关键概念:框架活动、通用原则、原则、问题解决、SafeHome、软件工程(定义、层次、实践)、软件神话、软件过程、普适性活动"></a>关键概念:框架活动、通用原则、原则、问题解决、SafeHome、软件工程(定义、层次、实践)、软件神话、软件过程、普适性活动</h4><h1 id="第一部分-软件过程"><a href="#第一部分-软件过程" class="headerlink" title="第一部分 软件过程"></a>第一部分 软件过程</h1><h2 id="第3章-软件过程结构"><a href="#第3章-软件过程结构" class="headerlink" title="第3章 软件过程结构"></a>第3章 软件过程结构</h2>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>使用idea连接hadoop</title>
+    <link href="/2021/11/15/%E4%BD%BF%E7%94%A8idea%E8%BF%9E%E6%8E%A5hadoop/"/>
+    <url>/2021/11/15/%E4%BD%BF%E7%94%A8idea%E8%BF%9E%E6%8E%A5hadoop/</url>
+    
+    <content type="html"><![CDATA[<p>本文适用于idea连接hadoop</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>正则表达式速查手册</title>
     <link href="/2021/11/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E9%80%9F%E6%9F%A5%E6%89%8B%E5%86%8C/"/>
     <url>/2021/11/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E9%80%9F%E6%9F%A5%E6%89%8B%E5%86%8C/</url>
@@ -60,7 +86,7 @@
     <link href="/2021/10/23/need-to-learn-in-future/"/>
     <url>/2021/10/23/need-to-learn-in-future/</url>
     
-    <content type="html"><![CDATA[<ul><li><h6 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h6></li><li><h6 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h6></li><li><h6 id="mybatis-done"><a href="#mybatis-done" class="headerlink" title="mybatis  (done)"></a>mybatis  (done)</h6></li><li><h6 id="spring5-done"><a href="#spring5-done" class="headerlink" title="spring5 (done)"></a>spring5 (done)</h6></li><li><h6 id="javaweb-done"><a href="#javaweb-done" class="headerlink" title="javaweb (done)"></a>javaweb (done)</h6></li><li><h6 id="springMVC"><a href="#springMVC" class="headerlink" title="springMVC"></a>springMVC</h6></li><li><h6 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h6></li><li><h6 id="React"><a href="#React" class="headerlink" title="React"></a>React</h6></li><li><h6 id="spring-boots"><a href="#spring-boots" class="headerlink" title="spring boots"></a>spring boots</h6></li><li><h6 id="spring-cloud"><a href="#spring-cloud" class="headerlink" title="spring cloud"></a>spring cloud</h6></li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li><h6 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h6></li><li><h6 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h6></li><li><h6 id="mybatis-done"><a href="#mybatis-done" class="headerlink" title="mybatis  (done)"></a>mybatis  (done)</h6></li><li><h6 id="spring5-done"><a href="#spring5-done" class="headerlink" title="spring5 (done)"></a>spring5 (done)</h6></li><li><h6 id="javaweb-done"><a href="#javaweb-done" class="headerlink" title="javaweb (done)"></a>javaweb (done)</h6></li><li><h6 id="springMVC"><a href="#springMVC" class="headerlink" title="springMVC"></a>springMVC</h6></li><li><h6 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h6></li><li><h6 id="React"><a href="#React" class="headerlink" title="React"></a>React</h6></li><li><h6 id="spring-boots"><a href="#spring-boots" class="headerlink" title="spring boots"></a>spring boots</h6></li><li><h6 id="spring-cloud"><a href="#spring-cloud" class="headerlink" title="spring cloud"></a>spring cloud</h6></li><li><p><strong>beautiful</strong> <strong>soup</strong></p></li></ul>]]></content>
     
     
     
@@ -86,7 +112,7 @@
     <link href="/2021/10/21/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/"/>
     <url>/2021/10/21/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/</url>
     
-    <content type="html"><![CDATA[<h6 id="判断是不是LL-1-文法："><a href="#判断是不是LL-1-文法：" class="headerlink" title="判断是不是LL(1)文法："></a>判断是不是LL(1)文法：</h6><p>1.它不含左递归</p><p>2.</p>]]></content>
+    <content type="html"><![CDATA[<p>文法分类：</p><ul><li><p>0型文法(无限制文法/短语结构文法)：</p><p>由0型文法生成的语言，称之为0型语言</p><p>产生式左部必须含有一个非终结符</p></li><li><p>1型文法CSG（上下文有关文法)：</p><p>要求：产生式左部的个数必须小于右部的个数</p></li><li><p>2型文法CFG（上下文无关文法）：</p><p>要求：产生式左部必须是非终结</p><p>由上下文无关文法生成的语言称为上下文无关语言</p></li><li><p>3型文法RG (正则文法)：</p><p>两种分类：</p><p>右线性文法：A-&gt;wB or A-&gt;w</p><p>左线性文法：A-&gt;Bw or A-&gt;w</p><p>左线性文法和右线性文法都被称为正则文法</p><p>生成的语言称做正则语言</p></li></ul><p>有穷自动机(FA):</p><p>​    初始状态：由start箭头指向</p><p>​    终止状态：可以有多个，用双圈表示</p><p>​    给定一个串x，如果存在于串x从初始状态到某个终止状态的转换序列，则称该串被FA接受</p><p>​    由一个FA接收的所有串构成的集合成为是由该FA定义的语言，记为L(FA)</p><ul><li><p>确定的有穷自动机(DFA)</p></li><li><p>不确定的又穷自动机(NFA)</p></li></ul><p>自顶向下分析方法：</p><ul><li><p>从分析书的顶部向底部方向构造分析树</p></li><li><p>可以看成是从文法开始符号S推导出词串w的过程</p></li></ul><p>采用最左推导的方式，即每次采用最左非终结符推导</p><p>不是所有文法都适用自顶向下分析方法，此时需要采用文法转换</p><p>文法转换：</p><p>1.消除左递归</p><p>​    直接左递归：A-&gt;Aa|b    === A-&gt;bA’ , A’-&gt;aA|∅      ，事实上 就是将左递归转换成右递归</p><p>LL(1)文法：</p><p>非终结符的后继符号集：FOLLOW</p><p>即：可能在某个句型中紧跟在A后边的终结符a的集合，记为FOLLOW(A)</p><p>产生式的可选集：SELECT</p><p>产生式A-&gt;B的可选集是指可以选用该产生式进行推导时对应的输入符号的集合，记为SELECT(A-&gt;B)</p><ul><li>SELECT(A-&gt;∅) = FOLLOW(A)</li><li>SELECT(A-&gt;aB) = {a}</li></ul><p>串首终结符集：FIRST</p><p>什么是LL(1)文法，当且仅当G的任意两个具有相同左部的产生式A-&gt;a|b能满足下面的条件：</p><p>对于任意两个具有相同左部的产生式A-&gt;a|b</p><ul><li>如何a和b均不能推导出空集，则FIRST(a)∩ FIRST(b) = ∅</li><li>a和b至多有一个能推导出空串</li></ul><p>根据SELECT集可以构造预测分析表</p><p>预测分析法：</p><p>​    递归的预测分析法：</p><p>自底向上的分析方法</p><p>LR分析法：</p><p>LR分析法的基本原理：</p><p>​    如何正确的识别句柄？</p><p>构造ACTION GOTO，LR分析表</p><p>LR(0)分析</p><p>(1)构造LR(0)自动机</p><p>(2)用LR(0)自动机构造LR(0)分析表</p><p>实现自动机需知函数：</p><p>1.CLOSURE()，计算给定项目的闭包函数</p><p>2.GOTO()函数，返回项目集I对应于文法符号X的后继项目集闭包</p><p>利用两个函数可以构造LR(0)自动机状态集</p><p>如果给定的LR(0)分析表中没有语法分析动作冲突，那么给定的文法就是LR(0)文法</p>]]></content>
     
     
     

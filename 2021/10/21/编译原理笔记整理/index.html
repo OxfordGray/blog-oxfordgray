@@ -16,15 +16,15 @@
   <meta name="description" content="">
   <meta name="author" content="PokerAAA">
   <meta name="keywords" content="博客">
-  <meta name="description" content="判断是不是LL(1)文法：1.它不含左递归 2.">
+  <meta name="description" content="文法分类：  0型文法(无限制文法&#x2F;短语结构文法)： 由0型文法生成的语言，称之为0型语言 产生式左部必须含有一个非终结符  1型文法CSG（上下文有关文法)： 要求：产生式左部的个数必须小于右部的个数  2型文法CFG（上下文无关文法）： 要求：产生式左部必须是非终结 由上下文无关文法生成的语言称为上下文无关语言  3型文法RG (正则文法)： 两种分类： 右线性文法：A-&gt;wB or A">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编译原理笔记整理">
 <meta property="og:url" content="http://pokeraaa.top/2021/10/21/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/index.html">
 <meta property="og:site_name" content="LiBoKai&#39;s Blog">
-<meta property="og:description" content="判断是不是LL(1)文法：1.它不含左递归 2.">
+<meta property="og:description" content="文法分类：  0型文法(无限制文法&#x2F;短语结构文法)： 由0型文法生成的语言，称之为0型语言 产生式左部必须含有一个非终结符  1型文法CSG（上下文有关文法)： 要求：产生式左部的个数必须小于右部的个数  2型文法CFG（上下文无关文法）： 要求：产生式左部必须是非终结 由上下文无关文法生成的语言称为上下文无关语言  3型文法RG (正则文法)： 两种分类： 右线性文法：A-&gt;wB or A">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-10-21T15:29:32.000Z">
-<meta property="article:modified_time" content="2021-10-21T16:07:02.780Z">
+<meta property="article:modified_time" content="2021-11-24T07:50:42.566Z">
 <meta property="article:author" content="PokerAAA">
 <meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary_large_image">
@@ -226,13 +226,87 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年10月22日 凌晨
+                  本文最后更新于：2021年11月24日 下午
                 
               </p>
             
             <div class="markdown-body">
-              <h6 id="判断是不是LL-1-文法："><a href="#判断是不是LL-1-文法：" class="headerlink" title="判断是不是LL(1)文法："></a>判断是不是LL(1)文法：</h6><p>1.它不含左递归</p>
-<p>2.</p>
+              <p>文法分类：</p>
+<ul>
+<li><p>0型文法(无限制文法/短语结构文法)：</p>
+<p>由0型文法生成的语言，称之为0型语言</p>
+<p>产生式左部必须含有一个非终结符</p>
+</li>
+<li><p>1型文法CSG（上下文有关文法)：</p>
+<p>要求：产生式左部的个数必须小于右部的个数</p>
+</li>
+<li><p>2型文法CFG（上下文无关文法）：</p>
+<p>要求：产生式左部必须是非终结</p>
+<p>由上下文无关文法生成的语言称为上下文无关语言</p>
+</li>
+<li><p>3型文法RG (正则文法)：</p>
+<p>两种分类：</p>
+<p>右线性文法：A-&gt;wB or A-&gt;w</p>
+<p>左线性文法：A-&gt;Bw or A-&gt;w</p>
+<p>左线性文法和右线性文法都被称为正则文法</p>
+<p>生成的语言称做正则语言</p>
+</li>
+</ul>
+<p>有穷自动机(FA):</p>
+<p>​    初始状态：由start箭头指向</p>
+<p>​    终止状态：可以有多个，用双圈表示</p>
+<p>​    给定一个串x，如果存在于串x从初始状态到某个终止状态的转换序列，则称该串被FA接受</p>
+<p>​    由一个FA接收的所有串构成的集合成为是由该FA定义的语言，记为L(FA)</p>
+<ul>
+<li><p>确定的有穷自动机(DFA)</p>
+</li>
+<li><p>不确定的又穷自动机(NFA)</p>
+</li>
+</ul>
+<p>自顶向下分析方法：</p>
+<ul>
+<li><p>从分析书的顶部向底部方向构造分析树</p>
+</li>
+<li><p>可以看成是从文法开始符号S推导出词串w的过程</p>
+</li>
+</ul>
+<p>采用最左推导的方式，即每次采用最左非终结符推导</p>
+<p>不是所有文法都适用自顶向下分析方法，此时需要采用文法转换</p>
+<p>文法转换：</p>
+<p>1.消除左递归</p>
+<p>​    直接左递归：A-&gt;Aa|b    === A-&gt;bA’ , A’-&gt;aA|∅      ，事实上 就是将左递归转换成右递归</p>
+<p>LL(1)文法：</p>
+<p>非终结符的后继符号集：FOLLOW</p>
+<p>即：可能在某个句型中紧跟在A后边的终结符a的集合，记为FOLLOW(A)</p>
+<p>产生式的可选集：SELECT</p>
+<p>产生式A-&gt;B的可选集是指可以选用该产生式进行推导时对应的输入符号的集合，记为SELECT(A-&gt;B)</p>
+<ul>
+<li>SELECT(A-&gt;∅) = FOLLOW(A)</li>
+<li>SELECT(A-&gt;aB) = {a}</li>
+</ul>
+<p>串首终结符集：FIRST</p>
+<p>什么是LL(1)文法，当且仅当G的任意两个具有相同左部的产生式A-&gt;a|b能满足下面的条件：</p>
+<p>对于任意两个具有相同左部的产生式A-&gt;a|b</p>
+<ul>
+<li>如何a和b均不能推导出空集，则FIRST(a)∩ FIRST(b) = ∅</li>
+<li>a和b至多有一个能推导出空串</li>
+</ul>
+<p>根据SELECT集可以构造预测分析表</p>
+<p>预测分析法：</p>
+<p>​    递归的预测分析法：</p>
+<p>自底向上的分析方法</p>
+<p>LR分析法：</p>
+<p>LR分析法的基本原理：</p>
+<p>​    如何正确的识别句柄？</p>
+<p>构造ACTION GOTO，LR分析表</p>
+<p>LR(0)分析</p>
+<p>(1)构造LR(0)自动机</p>
+<p>(2)用LR(0)自动机构造LR(0)分析表</p>
+<p>实现自动机需知函数：</p>
+<p>1.CLOSURE()，计算给定项目的闭包函数</p>
+<p>2.GOTO()函数，返回项目集I对应于文法符号X的后继项目集闭包</p>
+<p>利用两个函数可以构造LR(0)自动机状态集</p>
+<p>如果给定的LR(0)分析表中没有语法分析动作冲突，那么给定的文法就是LR(0)文法</p>
 
             </div>
             <hr>
