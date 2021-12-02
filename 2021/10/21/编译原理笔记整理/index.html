@@ -16,18 +16,30 @@
   <meta name="description" content="">
   <meta name="author" content="PokerAAA">
   <meta name="keywords" content="博客">
-  <meta name="description" content="文法分类：  0型文法(无限制文法&#x2F;短语结构文法)： 由0型文法生成的语言，称之为0型语言 产生式左部必须含有一个非终结符  1型文法CSG（上下文有关文法)： 要求：产生式左部的个数必须小于右部的个数  2型文法CFG（上下文无关文法）： 要求：产生式左部必须是非终结 由上下文无关文法生成的语言称为上下文无关语言  3型文法RG (正则文法)： 两种分类： 右线性文法：A-&gt;wB or A">
+  <meta name="description" content="知识要点： 直接短语、短语、句柄了解 正规式构造NFA NFA -&gt; DFA DFA的化简 FA -&gt; 正规式 LL(1)文法的充要条件 LL(1)文法的判别 FIRST FOLLOW SELECT   非LL(1)文法到LL(1)文法的等价变换 提取左公共因子 消除左递归(直接，间接)   不确定的自定向下分析思想 确定的自顶向下分析方法 递归子程序法 预测分析法[判别LL(1)文法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编译原理笔记整理">
 <meta property="og:url" content="http://pokeraaa.top/2021/10/21/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/index.html">
 <meta property="og:site_name" content="LiBoKai&#39;s Blog">
-<meta property="og:description" content="文法分类：  0型文法(无限制文法&#x2F;短语结构文法)： 由0型文法生成的语言，称之为0型语言 产生式左部必须含有一个非终结符  1型文法CSG（上下文有关文法)： 要求：产生式左部的个数必须小于右部的个数  2型文法CFG（上下文无关文法）： 要求：产生式左部必须是非终结 由上下文无关文法生成的语言称为上下文无关语言  3型文法RG (正则文法)： 两种分类： 右线性文法：A-&gt;wB or A">
+<meta property="og:description" content="知识要点： 直接短语、短语、句柄了解 正规式构造NFA NFA -&gt; DFA DFA的化简 FA -&gt; 正规式 LL(1)文法的充要条件 LL(1)文法的判别 FIRST FOLLOW SELECT   非LL(1)文法到LL(1)文法的等价变换 提取左公共因子 消除左递归(直接，间接)   不确定的自定向下分析思想 确定的自顶向下分析方法 递归子程序法 预测分析法[判别LL(1)文法">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/12/01/anbL7c4fdo62iVN.png">
+<meta property="og:image" content="https://i.loli.net/2021/12/01/HkCSgV9zGpLKZUw.png">
+<meta property="og:image" content="https://i.loli.net/2021/12/01/iUHs9AryuB1a7ZG.png">
+<meta property="og:image" content="https://i.loli.net/2021/12/01/VPIGvfg4pMQxjRe.png">
+<meta property="og:image" content="https://i.loli.net/2021/12/01/xO86Tl9GbytiWju.png">
+<meta property="og:image" content="https://i.loli.net/2021/12/01/kGmUFeSTscDPuao.png">
+<meta property="og:image" content="https://i.loli.net/2021/12/01/Ha3TtcynZ7GhkAY.png">
+<meta property="og:image" content="https://i.loli.net/2021/12/01/f75RMtSsKAa2Udr.png">
+<meta property="og:image" content="https://i.loli.net/2021/12/01/dcz4FSw7CM96VqD.png">
+<meta property="og:image" content="https://i.loli.net/2021/12/01/NWitvMQYm7O4rbu.png">
+<meta property="og:image" content="https://i.loli.net/2021/12/02/N8UxcAR9ukzETow.png">
 <meta property="article:published_time" content="2021-10-21T15:29:32.000Z">
-<meta property="article:modified_time" content="2021-11-24T07:50:42.566Z">
+<meta property="article:modified_time" content="2021-12-02T01:11:04.425Z">
 <meta property="article:author" content="PokerAAA">
 <meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.loli.net/2021/12/01/anbL7c4fdo62iVN.png">
   
   <title>编译原理笔记整理 - LiBoKai&#39;s Blog</title>
 
@@ -226,12 +238,58 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年11月24日 下午
+                  本文最后更新于：2021年12月2日 上午
                 
               </p>
             
             <div class="markdown-body">
-              <p>文法分类：</p>
+              <h2 id="知识要点："><a href="#知识要点：" class="headerlink" title="知识要点："></a>知识要点：</h2><ul>
+<li>直接短语、短语、句柄了解</li>
+<li>正规式构造NFA</li>
+<li>NFA -&gt; DFA</li>
+<li>DFA的化简</li>
+<li>FA -&gt; 正规式</li>
+<li>LL(1)文法的充要条件</li>
+<li>LL(1)文法的判别<ul>
+<li>FIRST</li>
+<li>FOLLOW</li>
+<li>SELECT</li>
+</ul>
+</li>
+<li>非LL(1)文法到LL(1)文法的等价变换<ul>
+<li>提取左公共因子</li>
+<li>消除左递归(直接，间接)</li>
+</ul>
+</li>
+<li>不确定的自定向下分析思想</li>
+<li>确定的自顶向下分析方法<ul>
+<li>递归子程序法</li>
+<li>预测分析法[判别LL(1)文法;构造预测分析表；分析输入串]</li>
+</ul>
+</li>
+<li>构造预测分析表，预测分析输入串</li>
+<li>LR分析法<ul>
+<li>LR(0)分析</li>
+<li>SLR(0)分析</li>
+<li>SLR(1)分析</li>
+<li>LR(1)分析</li>
+<li>LALR(1)分析</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.loli.net/2021/12/01/anbL7c4fdo62iVN.png" srcset="/img/loading.gif" lazyload alt="image-20211130234316350"></p>
+<p><img src="https://i.loli.net/2021/12/01/HkCSgV9zGpLKZUw.png" srcset="/img/loading.gif" lazyload alt="image-20211201194820981"></p>
+<p><img src="https://i.loli.net/2021/12/01/iUHs9AryuB1a7ZG.png" srcset="/img/loading.gif" lazyload alt="image-20211201205301816"></p>
+<p><img src="https://i.loli.net/2021/12/01/VPIGvfg4pMQxjRe.png" srcset="/img/loading.gif" lazyload alt="image-20211201205829159"></p>
+<p><img src="https://i.loli.net/2021/12/01/xO86Tl9GbytiWju.png" srcset="/img/loading.gif" lazyload alt="image-20211201213208115"></p>
+<p><img src="https://i.loli.net/2021/12/01/kGmUFeSTscDPuao.png" srcset="/img/loading.gif" lazyload alt="image-20211201213621124"></p>
+<p><img src="https://i.loli.net/2021/12/01/Ha3TtcynZ7GhkAY.png" srcset="/img/loading.gif" lazyload alt="image-20211201215430152"></p>
+<p><img src="https://i.loli.net/2021/12/01/f75RMtSsKAa2Udr.png" srcset="/img/loading.gif" lazyload alt="image-20211201220010388"></p>
+<p><img src="https://i.loli.net/2021/12/01/dcz4FSw7CM96VqD.png" srcset="/img/loading.gif" lazyload alt="image-20211201233234458"></p>
+<p><img src="https://i.loli.net/2021/12/01/NWitvMQYm7O4rbu.png" srcset="/img/loading.gif" lazyload alt="image-20211201233955492"></p>
+<h5 id="消除左递归："><a href="#消除左递归：" class="headerlink" title="消除左递归："></a>消除左递归：</h5><p>​    将左递归转换为右递归</p>
+<p><img src="https://i.loli.net/2021/12/02/N8UxcAR9ukzETow.png" srcset="/img/loading.gif" lazyload alt="image-20211202002740585"></p>
+<p>文法分类：</p>
 <ul>
 <li><p>0型文法(无限制文法/短语结构文法)：</p>
 <p>由0型文法生成的语言，称之为0型语言</p>
@@ -244,7 +302,7 @@
 <p>要求：产生式左部必须是非终结</p>
 <p>由上下文无关文法生成的语言称为上下文无关语言</p>
 </li>
-<li><p>3型文法RG (正则文法)：</p>
+<li><p>3型文法RG (正则文法)：  </p>
 <p>两种分类：</p>
 <p>右线性文法：A-&gt;wB or A-&gt;w</p>
 <p>左线性文法：A-&gt;Bw or A-&gt;w</p>
