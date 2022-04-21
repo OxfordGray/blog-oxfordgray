@@ -1,470 +1,179 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
-  <link rel="icon" href="/img/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
   
-  <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
+  <title>虚拟机简易安装教程 | LiBoKai&#39;s Blog | 黎博凯的博客</title>
+
+  
   <meta name="author" content="PokerAAA">
+  
+
+  
+  <meta name="description" content="虚拟机安装过程：
+1）准备Ubuntu或者centOs系统镜像（推荐官网获取：ubuntu centOs）
+
+
+2)下载好镜像，打开VMware点击创建新的虚拟机
+
+3）跟着引导操作
+
+
+
+
+这里建议选择30G
+
+
+4）等待虚拟机安装，这里选择Install CentOS 7
+
+5)选择语言
+
+6)">
+  
+
+  
   <meta name="keywords" content="博客">
-  <meta name="description" content="虚拟机安装过程： 1）准备Ubuntu或者centOs系统镜像（推荐官网获取：ubuntu centOs）   2)下载好镜像，打开VMware点击创建新的虚拟机  3）跟着引导操作     这里建议选择30G   4）等待虚拟机安装，这里选择Install CentOS 7  5)选择语言  6)选择一下系统设置  7)配置一下root用户，然后等待安装完成，需要注意的是，如果你的密码安全等级不">
-<meta property="og:type" content="article">
-<meta property="og:title" content="虚拟机简易安装教程">
-<meta property="og:url" content="http://pokeraaa.top/2021/10/09/%E4%BF%9D%E5%A7%86%E6%95%99%E7%A8%8B%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA/index.html">
-<meta property="og:site_name" content="LiBoKai&#39;s Blog">
-<meta property="og:description" content="虚拟机安装过程： 1）准备Ubuntu或者centOs系统镜像（推荐官网获取：ubuntu centOs）   2)下载好镜像，打开VMware点击创建新的虚拟机  3）跟着引导操作     这里建议选择30G   4）等待虚拟机安装，这里选择Install CentOS 7  5)选择语言  6)选择一下系统设置  7)配置一下root用户，然后等待安装完成，需要注意的是，如果你的密码安全等级不">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/4NnqkxTY8ZBIuvc.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/P6ptbqDS4FVAEwH.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/wYQJfl7XiezHySN.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/j5heDdCBmJ9EAFR.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/wO9UvFHjS1asmBh.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/JvSge72Vfj4R8mG.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/1QfXjFTOCtqySgo.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/PGe1Ho6nyq4N3bA.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/vibKYRc9HCtSkUV.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/ihsxStwBoD8GU6v.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/gQaljiVSPBpGzfM.png">
-<meta property="og:image" content="https://i.loli.net/2021/10/09/qhDNZKB7daE6fJ9.png">
-<meta property="article:published_time" content="2021-10-09T09:19:46.000Z">
-<meta property="article:modified_time" content="2021-10-22T05:34:42.193Z">
-<meta property="article:author" content="PokerAAA">
-<meta property="article:tag" content="教程">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://i.loli.net/2021/10/09/4NnqkxTY8ZBIuvc.png">
-  
-  <title>虚拟机简易安装教程 - LiBoKai&#39;s Blog</title>
-
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
-
-
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
-  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
-
-  
-    
-    
-      
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
-    
   
 
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="虚拟机简易安装教程"/>
+
+  <meta property="og:site_name" content="LiBoKai&#39;s Blog"/>
+
   
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  <meta property="og:image" content="/favicon.ico"/>
   
 
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-<!-- 自定义样式保持在最底部 -->
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"pokeraaa.top","root":"/","version":"1.8.12","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname"}},"search_path":"/local-search.xml"};
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="LiBoKai&#39;s Blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
 <body>
-  <header style="height: 70vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Blog</strong>
-    </a>
+<div class="blog">
+  <div class="content">
 
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                首页
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                分类
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
-            </a>
-          </li>
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
-      </ul>
-    </div>
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">LiBoKai&#39;s Blog</a>
+    </h1>
+    <p class="site-description">黎博凯的博客</p>
   </div>
-</nav>
-
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/banner_image_vmare.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="虚拟机简易安装教程">
-              
-            </span>
-
-            
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-10-09 17:19" pubdate>
-        2021年10月9日 下午
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-
-  
-
-  
-  
-</div>
-
-            
-          </div>
-
-          
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    
+  <nav class="site-navigation">
+    <ul>
       
+    </ul>
+  </nav>
+</header>
 
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">虚拟机简易安装教程</h1>
-            
-              <p class="note note-info">
-                
-                  本文最后更新于：2021年10月22日 下午
-                
-              </p>
-            
-            <div class="markdown-body">
-              <p><strong>虚拟机安装过程：</strong></p>
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>虚拟机简易安装教程</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2021/10/09/保姆教程安装虚拟机/" rel="bookmark">
+        <time class="entry-date published" datetime="2021-10-09T09:19:46.000Z">
+          2021-10-09
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p><strong>虚拟机安装过程：</strong></p>
 <p>1）准备Ubuntu或者centOs系统镜像（推荐官网获取：<a target="_blank" rel="noopener" href="https://ubuntu.com/">ubuntu</a> <a target="_blank" rel="noopener" href="https://www.centos.org/download/">centOs</a>）</p>
-<p><img src="https://i.loli.net/2021/10/09/4NnqkxTY8ZBIuvc.png" srcset="/img/loading.gif" lazyload alt="image-20211009205914751"></p>
-<p><img src="https://i.loli.net/2021/10/09/P6ptbqDS4FVAEwH.png" srcset="/img/loading.gif" lazyload alt="image-20211009205817030"></p>
+<p><img src="https://i.loli.net/2021/10/09/4NnqkxTY8ZBIuvc.png" alt="image-20211009205914751"></p>
+<p><img src="https://i.loli.net/2021/10/09/P6ptbqDS4FVAEwH.png" alt="image-20211009205817030"></p>
 <p>2)下载好镜像，打开VMware点击创建新的虚拟机</p>
-<p><img src="https://i.loli.net/2021/10/09/wYQJfl7XiezHySN.png" srcset="/img/loading.gif" lazyload alt="image-20211009205725116"></p>
+<p><img src="https://i.loli.net/2021/10/09/wYQJfl7XiezHySN.png" alt="image-20211009205725116"></p>
 <p>3）跟着引导操作</p>
-<p><img src="https://i.loli.net/2021/10/09/j5heDdCBmJ9EAFR.png" srcset="/img/loading.gif" lazyload alt="image-20211009210008134"></p>
-<p><img src="https://i.loli.net/2021/10/09/wO9UvFHjS1asmBh.png" srcset="/img/loading.gif" lazyload alt="image-20211009210052050"></p>
-<p><img src="https://i.loli.net/2021/10/09/JvSge72Vfj4R8mG.png" srcset="/img/loading.gif" lazyload alt="image-20211009210117821"></p>
-<p><img src="https://i.loli.net/2021/10/09/1QfXjFTOCtqySgo.png" srcset="/img/loading.gif" lazyload alt="image-20211009210225262"></p>
+<p><img src="https://i.loli.net/2021/10/09/j5heDdCBmJ9EAFR.png" alt="image-20211009210008134"></p>
+<p><img src="https://i.loli.net/2021/10/09/wO9UvFHjS1asmBh.png" alt="image-20211009210052050"></p>
+<p><img src="https://i.loli.net/2021/10/09/JvSge72Vfj4R8mG.png" alt="image-20211009210117821"></p>
+<p><img src="https://i.loli.net/2021/10/09/1QfXjFTOCtqySgo.png" alt="image-20211009210225262"></p>
 <center>这里建议选择30G</center>
 
-<p><img src="https://i.loli.net/2021/10/09/PGe1Ho6nyq4N3bA.png" srcset="/img/loading.gif" lazyload alt="image-20211009210540500"></p>
+<p><img src="https://i.loli.net/2021/10/09/PGe1Ho6nyq4N3bA.png" alt="image-20211009210540500"></p>
 <p>4）等待虚拟机安装，这里选择Install CentOS 7</p>
-<p><img src="https://i.loli.net/2021/10/09/vibKYRc9HCtSkUV.png" srcset="/img/loading.gif" lazyload alt="image-20211009210758320"></p>
+<p><img src="https://i.loli.net/2021/10/09/vibKYRc9HCtSkUV.png" alt="image-20211009210758320"></p>
 <p>5)选择语言</p>
-<p><img src="https://i.loli.net/2021/10/09/ihsxStwBoD8GU6v.png" srcset="/img/loading.gif" lazyload alt="image-20211009210653252"></p>
+<p><img src="https://i.loli.net/2021/10/09/ihsxStwBoD8GU6v.png" alt="image-20211009210653252"></p>
 <p>6)选择一下系统设置</p>
-<p><img src="https://i.loli.net/2021/10/09/gQaljiVSPBpGzfM.png" srcset="/img/loading.gif" lazyload alt="image-20211009211138613"></p>
+<p><img src="https://i.loli.net/2021/10/09/gQaljiVSPBpGzfM.png" alt="image-20211009211138613"></p>
 <p>7)配置一下root用户，然后等待安装完成，需要注意的是，如果你的密码安全等级不够高，需要点击两下完成</p>
-<p><img src="https://i.loli.net/2021/10/09/qhDNZKB7daE6fJ9.png" srcset="/img/loading.gif" lazyload alt="image-20211009211251254"></p>
+<p><img src="https://i.loli.net/2021/10/09/qhDNZKB7daE6fJ9.png" alt="image-20211009211251254"></p>
 <p>8)等待安装完成后点击一下重启就大功告成拉！</p>
 
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
-                    
-                  </div>
-                
-              </div>
-              
-                <p class="note note-warning">
-                  
-                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
-                  
-                </p>
-              
-              
-                <div class="post-prevnext">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2021/10/09/%E5%85%B3%E4%BA%8Ecentos%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA%E5%90%8E%E5%8F%AA%E6%9C%89%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A8%A1%E5%BC%8F%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">centos启动后只有命令行模式解决办法</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-          </article>
-        </div>
-      </div>
+      
     </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
 
-      </div>
-    
   </div>
-</div>
 
-<!-- Custom -->
+  <div class="article-footer">
+    <div class="article-meta pull-left">
 
+    
+      
 
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/教程/">教程</a>
+    </span>
     
 
     
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
     
 
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/教程/">教程</a>
+    </span>
     
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
+
     </div>
-  </div>
-</div>
-    
 
     
-  </main>
-
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <span>PokerAAA</span> <i class="iconfont icon-love"></i> <span>黎博凯</span> 
   </div>
-  
+</article>
 
   
 
-  
+
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2022 PokerAAA
+    
+  </p>
 </footer>
-
-
-  <!-- SCRIPTS -->
-  
-  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-<!-- Plugins -->
-
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-  
-
-
-
-  
-    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
-  
-  
-    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
-  
-  
-    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
-  
-  
-    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
-  
-
-
-
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-      typing(title)
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
-<script  src="/js/boot.js" ></script>
-
-
+    
+    
+  </div>
+</div>
 </body>
 </html>

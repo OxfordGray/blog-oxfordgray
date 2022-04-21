@@ -1,749 +1,846 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
-  <link rel="icon" href="/img/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
   
-  <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
+  <title>LiBoKai&#39;s Blog | 黎博凯的博客</title>
+
+  
   <meta name="author" content="PokerAAA">
-  <meta name="keywords" content="博客">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LiBoKai&#39;s Blog">
-<meta property="og:url" content="http://pokeraaa.top/index.html">
-<meta property="og:site_name" content="LiBoKai&#39;s Blog">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="PokerAAA">
-<meta property="article:tag" content="博客">
-<meta name="twitter:card" content="summary_large_image">
   
-  <title>LiBoKai&#39;s Blog</title>
 
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+  
 
+  
+  <meta name="keywords" content="博客">
+  
 
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<!-- 主题依赖的图标库，不要自行修改 -->
+  
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+  <meta property="og:site_name" content="LiBoKai&#39;s Blog"/>
 
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
 
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-<!-- 自定义样式保持在最底部 -->
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"pokeraaa.top","root":"/","version":"1.8.12","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname"}},"search_path":"/local-search.xml"};
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="LiBoKai&#39;s Blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Blog</strong>
-    </a>
+<div class="blog">
+  <div class="content">
 
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                首页
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                分类
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
-            </a>
-          </li>
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
-      </ul>
-    </div>
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">LiBoKai&#39;s Blog</a>
+    </h1>
+    <p class="site-description">黎博凯的博客</p>
   </div>
-</nav>
-
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="随便写写的小博客">
-              
-            </span>
-
-            
-          </div>
-
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/08/%E5%85%AD%E7%BA%A7%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/" target="_self">
-          六级技巧总结
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/12/08/%E5%85%AD%E7%BA%A7%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/" target="_self">
-          
-          
-            
-          
-          作文：打下了坚实基础 - lays a solid foundation
-提高 - enhance
-富有成效的 - fruitful
-多样性 - diversity
-两难境地开头 - in a dilemma when deciding whether to A or B
-
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-08 17:43" pubdate>
-              2021-12-08
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/11/28/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%AC%94%E8%AE%B0/" target="_self">
-          软件工程笔记
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/11/28/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%AC%94%E8%AE%B0/" target="_self">
-          
-          
-            
-          
-          软件是：(1)指令的集合(计算机程序)，通过执行这些指令来满足预期的特征、功能和性能需求；  
-(2)数据结构，使得程序可以合理的利用信息；
-(3)文档描述，用来描述程序操作和使用。
-意外效益法则：某些新科技的发明创造会给其他一些看似无关的技术领域、商业企业、公众甚至整个社会文化带来深远而出人意料的影响和作用。这就是所谓的“意外效应法则”（law of unintended consequence
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-28 00:51" pubdate>
-              2021-11-28
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/11/15/%E4%BD%BF%E7%94%A8idea%E8%BF%9E%E6%8E%A5hadoop/" target="_self">
-          使用idea连接hadoop
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/11/15/%E4%BD%BF%E7%94%A8idea%E8%BF%9E%E6%8E%A5hadoop/" target="_self">
-          
-          
-            
-          
-          本文适用于idea连接hadoop
-
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-15 22:00" pubdate>
-              2021-11-15
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/11/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E9%80%9F%E6%9F%A5%E6%89%8B%E5%86%8C/" target="_self">
-          正则表达式速查手册
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/11/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E9%80%9F%E6%9F%A5%E6%89%8B%E5%86%8C/" target="_self">
-          
-          
-            
-          
-          一、校验数字的表达式
-数字：^[0-9]*$
-n位的数字：^\d&#123;n&#125;$
-至少n位的数字：^\d&#123;n,&#125;$
-m-n位的数字：^\d&#123;m,n&#125;$
-零和非零开头的数字：^(0|[1-9][0-9]*)$
-非零开头的最多带两位小数的数字：^([1-9][0-9]*)+(.[0-9]&#123;1,2&#125;)?$
-带1-2位小数的正数或负数
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-03 21:20" pubdate>
-              2021-11-03
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/10/27/8%E7%82%B9%E5%BB%BA%E8%AE%AE%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%BC%98%E9%9B%85%E7%9A%84JAVA%E4%BB%A3%E7%A0%81/" target="_self">
-          8点建议助你写出优雅的JAVA代码
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/10/27/8%E7%82%B9%E5%BB%BA%E8%AE%AE%E5%8A%A9%E4%BD%A0%E5%86%99%E5%87%BA%E4%BC%98%E9%9B%85%E7%9A%84JAVA%E4%BB%A3%E7%A0%81/" target="_self">
-          
-          
-            
-          
-          在每一位刚入行的程序员的心中，编写程序都是一门神圣的艺术创作。他们无不希望自己的代码作品既简洁清晰，又可读性强，而且还具有一定的容错能力。本文将为您带来七点建议和技巧，以帮助您编写出简洁、干练的 Java 代码。其中的有些可能会让你觉得有些不可思议，但是请相信我，如下的每一条我都亲身实践过的。
-1.使用 IntelliJ IDEA 作为您的集成开发环境 (IDE)虽然我已经使用了六年的 Eclip
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-10-27 15:24" pubdate>
-              2021-10-27
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/10/26/%E5%9F%BA%E4%BA%8Espringboot%E7%9A%84%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2%E9%A1%B9%E7%9B%AE/" target="_self">
-          基于springboot的在线教育项目
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/10/26/%E5%9F%BA%E4%BA%8Espringboot%E7%9A%84%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2%E9%A1%B9%E7%9B%AE/" target="_self">
-          
-          
-            
-          
-          TODO:
-后台Banner增删改查
-后台美化
-课程条件查询
-技术前缀:
-项目实现功能模块:
-
-项目使用技术:项目采用 前后端分离开发
-
-
-项目工程结构：
-开发讲师管理模块后端1.创建数据库，创建讲师数据库表
-开发过程中遇到的错误:1.在编写讲师模块的时候，第一次启动测试出现问题：
-报错信息
-错误原因：数据源出现错误
-疑点：
-日志中显示8080端口，但是我的配置文件中明明填写了8001端口和URL
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-10-26 14:57" pubdate>
-              2021-10-26
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/10/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/" target="_self">
-          计算机书籍推荐
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/10/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/" target="_self">
-          
-          
-            
-          
-          
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-10-25 16:03" pubdate>
-              2021-10-25
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/10/23/need-to-learn-in-future/" target="_self">
-          need to learn in future
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/10/23/need-to-learn-in-future/" target="_self">
-          
-          
-            
-          
-          
-Redis
-MongoDB
-mybatis  (done)
-spring5 (done)
-javaweb (done)
-springMVC
-vue
-React
-spring boots
-spring cloud
-beautiful soup
-
-
-
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-10-23 00:15" pubdate>
-              2021-10-23
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/10/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/" target="_self">
-          计算机网络笔记整理
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/10/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/" target="_self">
-          
-          
-            
-          
-          
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-10-21 23:29" pubdate>
-              2021-10-21
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/10/21/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/" target="_self">
-          编译原理笔记整理
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/10/21/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/" target="_self">
-          
-          
-            
-          
-          知识要点：
-直接短语、短语、句柄了解
-正规式构造NFA
-NFA -&gt; DFA
-DFA的化简
-FA -&gt; 正规式
-LL(1)文法的充要条件
-LL(1)文法的判别
-FIRST
-FOLLOW
-SELECT
-
-
-非LL(1)文法到LL(1)文法的等价变换
-提取左公共因子
-消除左递归(直接，间接)
-
-
-不确定的自定向下分析思想
-确定的自顶向下分析方法
-递归子程序法
-预测分析法[判别LL(1)文法
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-10-21 23:29" pubdate>
-              2021-10-21
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
-    </span>
+  <nav class="site-navigation">
+    <ul>
+      
+    </ul>
   </nav>
+</header>
 
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <main class="site-main posts-loop">
     
+  <article>
 
+  
     
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    <h3 class="article-title"><a href="/2022/04/19/线段树/"><span>线段树</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2022/04/19/线段树/" rel="bookmark">
+        <time class="entry-date published" datetime="2022-04-19T07:02:31.000Z">
+          2022-04-19
+        </time>
       </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/range-sum-query-mutable/">307. 区域和检索 - 数组可修改</a></p>
+<p>这题有两种实现方法：树状数组和 线段树，我这采取了线段树的实现方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NumArray</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span>[] f = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">1200001</span>];         <span class="comment">//数组长度得为4n</span></span><br><span class="line">    <span class="keyword">int</span>[] a = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">300001</span>];</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">buildTree</span><span class="params">(<span class="keyword">int</span> k, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;            <span class="comment">//线段树建树操作</span></span><br><span class="line">        <span class="keyword">if</span> (l == r) &#123;</span><br><span class="line">            f[k] = a[l];</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> m = (l + r) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        buildTree(k + k, l, m);         <span class="comment">//左子树建立</span></span><br><span class="line">        buildTree(k + k + <span class="number">1</span>, m + <span class="number">1</span>, r);         <span class="comment">//右子树建立</span></span><br><span class="line">        f[k] = f[k + k] + f[k + k + <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">calc</span><span class="params">(<span class="keyword">int</span> k, <span class="keyword">int</span> l, <span class="keyword">int</span> r, <span class="keyword">int</span> s,<span class="keyword">int</span> t)</span> </span>&#123;               <span class="comment">//k是目标结点，l是左区间,r右区间，s和t为所求的目标区间</span></span><br><span class="line">        <span class="keyword">if</span> (l == s &amp;&amp; r == t) &#123;</span><br><span class="line">            <span class="keyword">return</span> f[k];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> m = (l + r) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> (t &lt;= m) &#123;</span><br><span class="line">            <span class="keyword">return</span> calc(k + k, l, m, s, t);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (s &gt; m) &#123;</span><br><span class="line">                <span class="keyword">return</span> calc(k + k + <span class="number">1</span>, m + <span class="number">1</span>, r, s, t);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> calc(k + k, l, m, s, m) + calc(k + k + <span class="number">1</span>, m + <span class="number">1</span>, r, m + <span class="number">1</span>, t);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> k, <span class="keyword">int</span> l, <span class="keyword">int</span> r, <span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;            <span class="comment">//x是目标结点,y是操作</span></span><br><span class="line">        <span class="keyword">if</span> (l == r) &#123;</span><br><span class="line">            f[k] = y;                            <span class="comment">//将目标结点赋值</span></span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> m = (l + r) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> (x &lt;= m) &#123;</span><br><span class="line">            update(k + k, l, m, x, y);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            update(k + k + <span class="number">1</span>, m + <span class="number">1</span>, r, x, y);</span><br><span class="line">        &#125;</span><br><span class="line">        f[k] = f[k + k] + f[k + k + <span class="number">1</span>];         <span class="comment">//回溯的时候更新父节点的值</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">NumArray</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;                   <span class="comment">//由于线段树的根节点是从1到n，而nums数组是从0到n-1，赋值需要一个减1操作</span></span><br><span class="line">        <span class="keyword">this</span>.n = nums.length;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">            a[i] = nums[i-<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        buildTree(<span class="number">1</span>, <span class="number">1</span>, n);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> index, <span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        update(<span class="number">1</span>, <span class="number">1</span>, n, index+<span class="number">1</span>, val);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">sumRange</span><span class="params">(<span class="keyword">int</span> left, <span class="keyword">int</span> right)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> calc(<span class="number">1</span>, <span class="number">1</span>, n, left+<span class="number">1</span>, right+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your NumArray object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * NumArray obj = new NumArray(nums);</span></span><br><span class="line"><span class="comment"> * obj.update(index,val);</span></span><br><span class="line"><span class="comment"> * int param_2 = obj.sumRange(left,right);</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="LCP-52-二叉搜索树染色"><a href="#LCP-52-二叉搜索树染色" class="headerlink" title="LCP 52. 二叉搜索树染色"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/QO5KpG/">LCP 52. 二叉搜索树染色</a></h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * public class TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode left;</span></span><br><span class="line"><span class="comment"> *     TreeNode right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    List&lt;Integer&gt; nums = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">dfs</span> <span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root.left != <span class="keyword">null</span>) dfs(root.left);</span><br><span class="line">        nums.add(root.val);</span><br><span class="line">        <span class="keyword">if</span> (root.right != <span class="keyword">null</span>) dfs(root.right);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">ST</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> color;</span><br><span class="line">        ST l,r;</span><br><span class="line">        <span class="keyword">int</span> s,e;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">ST</span><span class="params">(<span class="keyword">int</span> start, <span class="keyword">int</span> end)</span> </span>&#123;</span><br><span class="line">            s = start;</span><br><span class="line">            e = end;</span><br><span class="line">            color = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">if</span> (s &lt; e) &#123;</span><br><span class="line">                <span class="keyword">int</span> m = (start+end) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">                l = <span class="keyword">new</span> ST(s, m);</span><br><span class="line">                r = <span class="keyword">new</span> ST(m+<span class="number">1</span>, e);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">updateColor</span><span class="params">(<span class="keyword">int</span> start, <span class="keyword">int</span> end, <span class="keyword">boolean</span> isRed)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (start &lt;= s &amp;&amp; end &gt;= e) &#123;</span><br><span class="line">                color = isRed?<span class="number">1</span>:<span class="number">0</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (color != <span class="number">2</span>) &#123;</span><br><span class="line">                    l.color = color;</span><br><span class="line">                    r.color = color;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">int</span> m = (s+e) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">if</span> (m &gt;= start) &#123;</span><br><span class="line">                    l.updateColor(start, end, isRed);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (m &lt; end) &#123;</span><br><span class="line">                    r.updateColor(start, end, isRed);</span><br><span class="line">                &#125;</span><br><span class="line">                color = <span class="number">2</span>;</span><br><span class="line">                <span class="keyword">if</span> (l.color == r.color &amp;&amp; l.color != <span class="number">2</span>) &#123;</span><br><span class="line">                    color = l.color;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isRed</span><span class="params">(<span class="keyword">int</span> pos)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (color != <span class="number">2</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> color == <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">int</span> m = (s + e) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span> (m &gt;= pos) &#123;</span><br><span class="line">                <span class="keyword">return</span> l.isRed(pos);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> r.isRed(pos);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getNumber</span><span class="params">(TreeNode root, <span class="keyword">int</span>[][] ops)</span> </span>&#123;</span><br><span class="line">        dfs(root);</span><br><span class="line">        <span class="keyword">int</span> n = nums.size();</span><br><span class="line">        Map&lt;Integer,Integer&gt; numIndex = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            numIndex.put(nums.get(i),i);</span><br><span class="line">        &#125;</span><br><span class="line">        ST st = <span class="keyword">new</span> ST(<span class="number">0</span>,n);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ops.length; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> x=numIndex.get(ops[i][<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">int</span> y=numIndex.get(ops[i][<span class="number">2</span>]);</span><br><span class="line">            st.updateColor(x,y,ops[i][<span class="number">0</span>]==<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (st.isRed(i))res++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="1606-找到处理最多请求的服务器"><a href="#1606-找到处理最多请求的服务器" class="headerlink" title="1606. 找到处理最多请求的服务器"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-servers-that-handled-most-number-of-requests/">1606. 找到处理最多请求的服务器</a></h4>
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
     
 
     
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
+
     </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2022/01/10/算法技巧总结/"><span>算法技巧总结</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2022/01/10/算法技巧总结/" rel="bookmark">
+        <time class="entry-date published" datetime="2022-01-10T06:13:12.000Z">
+          2022-01-10
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h2 id="数组思想"><a href="#数组思想" class="headerlink" title="数组思想"></a>数组思想</h2><h3 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h3><h3 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h3><p>题目:<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/minimum-size-subarray-sum/">长度最小的子数组</a>、<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/fruit-into-baskets/">水果成篮</a>、<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/minimum-window-substring/">最小覆盖子串</a>、</p>
+<h3 id="双指针-快指针和慢指针"><a href="#双指针-快指针和慢指针" class="headerlink" title="双指针,快指针和慢指针"></a>双指针,快指针和慢指针</h3><h3 id="螺旋矩阵"><a href="#螺旋矩阵" class="headerlink" title="螺旋矩阵"></a>螺旋矩阵</h3><p>题目:<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/spiral-matrix/">螺旋矩阵</a>、<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/spiral-matrix-ii/">螺旋矩阵II</a>、<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/spiral-matrix-ii/">顺时针打印矩阵</a></p>
+<h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><p>用数组模拟HASHMAP</p>
+<h2 id="递归算法技巧"><a href="#递归算法技巧" class="headerlink" title="递归算法技巧"></a>递归算法技巧</h2><p>三要素：</p>
+<p>1.<strong>确定递归函数的参数和返回值</strong></p>
+<p>2.<strong>确定终止条件</strong></p>
+<p>3.<strong>确定单层递归的逻辑</strong></p>
+<h2 id="二叉树的迭代遍历"><a href="#二叉树的迭代遍历" class="headerlink" title="二叉树的迭代遍历"></a>二叉树的迭代遍历</h2>
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2022/01/02/spring-boot学习心得/"><span>spring-boot学习心得</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2022/01/02/spring-boot学习心得/" rel="bookmark">
+        <time class="entry-date published" datetime="2022-01-02T11:41:56.000Z">
+          2022-01-02
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>@Controller注解</p>
+<p>告诉Spring-boot这是个Controller</p>
+<p>@Resbody注解</p>
+<p>合成:@RestController</p>
+<p>整合mybatis</p>
+<p>Spring Security 权限控制 身份认证 </p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2021/12/08/六级技巧总结/"><span>六级技巧总结</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2021/12/08/六级技巧总结/" rel="bookmark">
+        <time class="entry-date published" datetime="2021-12-08T09:43:35.000Z">
+          2021-12-08
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h2 id="作文："><a href="#作文：" class="headerlink" title="作文："></a>作文：</h2><p>打下了坚实基础 - lays a solid foundation</p>
+<p>提高 - enhance</p>
+<p>富有成效的 - fruitful</p>
+<p>多样性 - diversity</p>
+<p>两难境地开头 - in a dilemma when deciding whether to A or B</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2021/11/28/软件工程笔记/"><span>软件工程笔记</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2021/11/28/软件工程笔记/" rel="bookmark">
+        <time class="entry-date published" datetime="2021-11-27T16:51:10.000Z">
+          2021-11-28
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h4 id="软件是："><a href="#软件是：" class="headerlink" title="软件是："></a>软件是：</h4><p>(1)指令的集合(计算机程序)，通过执行这些指令来满足预期的特征、功能和性能需求；  </p>
+<p>(2)数据结构，使得程序可以合理的利用信息；</p>
+<p>(3)文档描述，用来描述程序操作和使用。</p>
+<p>意外效益法则：某些新科技的发明创造会给其他一些看似无关的技术领域、商业企业、公众甚至整个社会文化带来深远而出人意料的影响和作用。这就是所谓的“意外效应法则”（law of unintended consequences）。</p>
+<h4 id="遗留软件"><a href="#遗留软件" class="headerlink" title="遗留软件"></a>遗留软件</h4><p>​    为什么一定要变更？</p>
+<p>​        软件必须进行适应性调整，以满足新的计算环境和技术的需求。<br>​        软件必须升级以实现新的商业需求。<br>​        软件必须扩展使之具有与更多现代系统和数据库的互操作能力。<br>​        软件必须进行改建使之能适应多样化的网络环境。</p>
+<h4 id="用例图-？"><a href="#用例图-？" class="headerlink" title="用例图 ？"></a>用例图 ？</h4><h4 id="CRC建模"><a href="#CRC建模" class="headerlink" title="CRC建模"></a>CRC建模</h4><p>CRC模型是一种收集并整理卡片的开发方式。一个CRC卡片由三个组成部分构成：1、首先构成相似现实对象的类；2、明确此类应该知道或者应该做的职责；3、找出在此类实现职责过程中产生相互作用的其他类作为协作者</p>
+<p><img src="https://p-blog.csdn.net/images/p_blog_csdn_net/onight/EntryImages/20091201/crcCardLayout.jpg" alt="img"></p>
+<p><img src="https://i.loli.net/2021/11/29/L5uV29XlWvGcgA8.png" alt="image-20211129222917454"></p>
+<h4 id="WebApps的特性"><a href="#WebApps的特性" class="headerlink" title="WebApps的特性"></a>WebApps的特性</h4><ul>
+<li><strong>网络密集型</strong>：WebApp 驻留在网络上，服务于不同客户群体的需求。</li>
+<li><strong>并发性</strong>：大量用户可能同时访问WebApp 。</li>
+<li><strong>无法预知的负载量</strong>：WebApp的用户数量每天都可能有数量级的变化。</li>
+<li><strong>性能</strong>： 如果一位WebApp用户必须等待很长时间（访问、服务器端处理、客户端格式化显示），该用户就可能转向其他地方。</li>
+<li><strong>可用性</strong>：尽管期望百分百的可用性是不切实际的，但是对于热门的WebApp，用户通常要求能够24/7/365（全天候）访问。 </li>
+<li><strong>数据驱动</strong>：许多WebApp的主要功能是使用超媒体向最终用户提供文本、图片、音频及视频内容。</li>
+<li><strong>内容敏感性</strong>：内容的质量和艺术性仍然很大程度上决定了WebApp的质量。</li>
+<li><strong>持续演化</strong>：传统的应用软件是随一系列规划好的时间间隔发布而演化的，而Web应用则持续地演化。</li>
+<li><strong>即时性</strong>：尽管即时性—也就是将软件尽快推向市场的迫切需求—是很多应用领域的特点，然而将WebApp投入市场可能只是几天或几周的事。</li>
+<li><strong>安全性</strong>：由于WebApp是通过网络访问来使用的，因此要限制访问的最终用户，即使可能也非常困难。</li>
+<li><strong>美观性</strong>：不可否认，WebApp的用户界面和外观很有吸引力。</li>
+</ul>
+<h4 id="关键概念：应用领域、云计算、失效曲线、遗留软件、移动App、产品线、软件定义、软件问题、软件的本质、磨损、WebApp"><a href="#关键概念：应用领域、云计算、失效曲线、遗留软件、移动App、产品线、软件定义、软件问题、软件的本质、磨损、WebApp" class="headerlink" title="关键概念：应用领域、云计算、失效曲线、遗留软件、移动App、产品线、软件定义、软件问题、软件的本质、磨损、WebApp"></a>关键概念：应用领域、云计算、失效曲线、遗留软件、移动App、产品线、软件定义、软件问题、软件的本质、磨损、WebApp</h4><h4 id="IEEE-定义："><a href="#IEEE-定义：" class="headerlink" title="IEEE 定义："></a><strong>IEEE 定义：</strong></h4><p>软件工程是：</p>
+<p>（1）将系统化的、规范的、可量化的方法应用于软件的开发、运行和维护，即将工程化方法应用于软件。</p>
+<p>（2）在(1)中所述方法的研究。</p>
+<h4 id="框架活动（重点！）"><a href="#框架活动（重点！）" class="headerlink" title="框架活动（重点！）"></a>框架活动（重点！）</h4><ul>
+<li><p>沟通</p>
+</li>
+<li><p>策划</p>
+</li>
+<li><p>建模</p>
+<pre><code>-需求分析
+-设计
+</code></pre>
+</li>
+<li><p>构建</p>
+<pre><code>-代码生成
+-测试
+</code></pre>
+</li>
+<li><p>部署</p>
+</li>
+</ul>
+<h4 id="过程的适应性调整"><a href="#过程的适应性调整" class="headerlink" title="过程的适应性调整"></a>过程的适应性调整</h4><p>不同项目所采取的项目过程可能有很大的不同。这些不同主要体现在以下几个方面：</p>
+<p>​    -活动、动作和任务的总体流程，以及它们之间相互依赖关系<br>​    -在每一个框架活动中，动作和任务细化的程度<br>​    -工作产品的定义和要求的程度<br>​    -质量保证活动应用的方式<br>​    -项目跟踪和控制活动应用的方式<br>​    -过程描述的详细程度和严谨程度<br>​    -客户和利益相关者对项目参与的程度<br>​    -软件团队所赋予的自主权<br>​    -队伍组织和角色明确程度</p>
+<h4 id="关键概念"><a href="#关键概念" class="headerlink" title="关键概念:"></a>关键概念:</h4><p>框架活动、通用原则、原则、问题解决、SafeHome、软件工程(定义、层次、实践)、软件神话、软件过程、普适性活动</p>
+<h4 id="任务集"><a href="#任务集" class="headerlink" title="任务集:"></a>任务集:</h4><p>任务集定义了为达到一个软件工程动作的目标所需要完成的工作。<br>        所需完成任务的列表<br>        所需生产的工作产品列表<br>        应用质量保证过滤的列表</p>
+<h4 id="基本设计原则"><a href="#基本设计原则" class="headerlink" title="基本设计原则:"></a>基本设计原则:</h4><p>开闭原则(OCP)。“模块[构件]应该对外延具有开放性，对修改具有封闭性”。<br>    Liskov 替换原则(LSP)。“子类可以替换它们的基类”。<br>    依赖倒置原则(DIP)。“依赖于抽象，而非具体实现”。<br>    接口分离原则(ISP)。“多个客户专用接口比一个通用接口要好”。<br>    发布复用等价性原则(REP)。“复用的粒度就是发布的粒度”。<br>    共同封装原则(CCP)。“一同变更的类应该合在一起”。<br>    共同复用原则(CRP).。“不能一起复用的类不能被分到一组”。</p>
+<h4 id="测试策略"><a href="#测试策略" class="headerlink" title="测试策略:"></a>测试策略:</h4><p>单元测试：单元测试侧重于软件设计的最小单元的验证工作。利用构建级设计描述作为指南，测试重要的控制路径以发现模块内的错误</p>
+<p>集成测试：自顶向下集成 自顶向上集成</p>
+<h2 id="重点课后习题："><a href="#重点课后习题：" class="headerlink" title="重点课后习题："></a>重点课后习题：</h2><p><strong>用自己的话描述过程框架。当我们谈到框架活动适用于所有的项目时，是否意味着对于不同规模和复杂度的项目可应用相同的工作任务？请解释</strong></p>
+<p>-过程框架适用于所有的项目，在相同的工作任务，适用于所有项目，无论其规模大小或复杂性。一个过程框架涉及大量的与客户沟通来收集需求；这个活动建立了一下软件工程工作计划。它涉及到创建模型，这将有助于开发人员了解顾客的要求从而进行涉及。从而涉及构建(代码生成和错误测试)。最后，他提供了基于评价的反馈。</p>
+<p><strong>为沟通活动设计一些列的动作，选定一个动作为其设计一个任务集。</strong></p>
+<p>-任务交流活动设置：任务组将定义实际的工作需要，以完成一个软件工程的行动。这些都是对于通信的活动：a)利益相关者对项目做一个列表 b)邀请所有利益相关者的非正式会议 c)要求他们作出特性和功能列表 d)讨论需求并建立一个最终的列表 e)他不确定的优先级的要求和要注意的地方。</p>
+<p>​    这些任务可能是一个复杂的软件项目，然后，他们可能包括： a)要进行一系列的规范会议，基于利益相关者的输入，建立了初步的功能和特性列表 b)要建立一个股权持有人要求的修订清单 c)使用质量功能展开技术来满足需求 d)注意在系统上的约束和限制 e)讨论验证系统的方法</p>
+<p><strong>开发质量“足够好”的软件，其优点和缺点是什么？也就是说，当我们追求开发速度胜过产品质量的时候，会产生什么后果？</strong></p>
+<p>-开发质量“足够好”的软件可能会碰到截止时间，但质量会是比较好的。当追求开发速度超过了产品的质量，这可能会导致许多缺陷，该软件可能需要更多的测试，设计和实施计划。需求定义的不是很清楚，可能需要不断地改变。半吊子和速度过快开发都可能导致无法检测到重大的项目风险。质量太差可能导致过多的质量问题和频繁的返工。</p>
+<p><strong>用自己的话描述XP的重构和结对编程的概念</strong></p>
+<p>-重构：已经写好的正确的代码，不断修正，是的代码更加精简易读</p>
+<p>​     结对编程：两个人同时编写一段代码，一般一个人负责实现，一个负责检查代码质量</p>
+<p>如何评估软件设计的质量</p>
+<p>-<strong>可读性</strong>：软件的设计文档是否轻易被其他程序员理解。可读性差的设计会给大型软件的开发和维护过程带来严重的危害。</p>
+<p> <strong>可复用性</strong>：软件系统的架构、类、组件等单元能否很容易被本项目的其它部分或者其它项目复用。</p>
+<p> <strong>可扩展性</strong>：软件面对需求变化时，功能或性能扩展的难易程度。</p>
+<p> <strong>可维护性</strong>：软件维护（主要是指软件错误的修改、遗漏功能的添加等）的难易程度。</p>
+<p> <strong>内聚度</strong>：内聚度表示一个应用程序的单个单元所负责的任务数量和多样性，内聚与单个类或者单个方法单元相关。好的软件设计应该做到高内聚。</p>
+<p>理想状态下，一个代码单元应该负责一个内聚的任务，也就是说一个任务可以看作是一个逻辑单元。一个方法应该实现一个逻辑操作，一个类应该代表一种类型的实体。</p>
+<p>内聚原则背后的主要原因是重用：如果一个方法或一个类只负责一个定义明确的事情，那么在不同的上下文环境中，它就能更好地被再次使用。</p>
+<p>遵循该规则的另一个优点是，当一个应用程序的某些方面需要做出改变时，我们能够在相同单元中找到所有相关的部分。</p>
+<p>如果一个系统单元只负责一件事情，就说明这个系统单元有很高的内聚度；如果一个系统单元负责了很多不相关的事情，则说明这个系统单元是内聚度很低。内聚度很高的系统单元通常很容易理解，很容易被复用、扩展和维护。</p>
+<p>如果一个方法可以用简单的“动词+名词”的形式来命名（例如，loadFile()、getName()、calcPrice()），或者如果一个类可以用准确的名词来命名（例如，Employee、Student、Teacher），那么这样的类或者方法就是内聚度较高的系统单元；反之，如果类或者方法的名字必须包含“和(and)”、“或(or)”等字样才能准确反映其功能特性的话，这些类或方法的内聚度一般都不会太高。</p>
+<p> <strong>耦合度</strong>：耦合度表示类之间关系的紧密程度，它决定了变更一个应用程序的难易程度。</p>
+<p>在紧密耦合的类结构中，更改一个类会导致其它的类也随之需要做出修改。显然，这是我们在类设计时应该避免的，因为微小的修改会迅速波动影响到整个应用程序。此外，找到需要修改的所有的地方是必须的，实际上就使得修改变得困难并且耗费时间。</p>
+<p>在松散耦合的系统中，我们可以更改一个类，不需要修改其它类，而应用程序仍然能够正常工作。</p>
+<p>概括起来，较低的耦合度和较高的内聚度，也即我们常说的“高内聚、低耦合”是所有优秀软件的共同特征。</p>
+<p>如果一个软件的内聚度和耦合度都符合要求，它也就自然具备了比较好的复用性、可扩展性和可维护性。</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2021/11/15/使用idea连接hadoop/"><span>使用idea连接hadoop</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2021/11/15/使用idea连接hadoop/" rel="bookmark">
+        <time class="entry-date published" datetime="2021-11-15T14:00:24.000Z">
+          2021-11-15
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>本文适用于idea连接hadoop</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2021/11/03/正则表达式速查手册/"><span>正则表达式速查手册</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2021/11/03/正则表达式速查手册/" rel="bookmark">
+        <time class="entry-date published" datetime="2021-11-03T13:20:22.000Z">
+          2021-11-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h3 id="一、校验数字的表达式"><a href="#一、校验数字的表达式" class="headerlink" title="一、校验数字的表达式"></a><strong>一、校验数字的表达式</strong></h3><ol>
+<li>数字：<code>^[0-9]*$</code></li>
+<li>n位的数字：<code>^\d&#123;n&#125;$</code></li>
+<li>至少n位的数字：<code>^\d&#123;n,&#125;$</code></li>
+<li>m-n位的数字：<code>^\d&#123;m,n&#125;$</code></li>
+<li>零和非零开头的数字：<code>^(0|[1-9][0-9]*)$</code></li>
+<li>非零开头的最多带两位小数的数字：<code>^([1-9][0-9]*)+(.[0-9]&#123;1,2&#125;)?$</code></li>
+<li>带1-2位小数的正数或负数：<code>^(\-)?\d+(\.\d&#123;1,2&#125;)?$</code></li>
+<li>正数、负数、和小数：<code>^(\-|\+)?\d+(\.\d+)?$</code></li>
+<li>有两位小数的正实数：<code>^[0-9]+(.[0-9]&#123;2&#125;)?$</code></li>
+<li>有1~3位小数的正实数：<code>^[0-9]+(.[0-9]&#123;1,3&#125;)?$</code></li>
+<li>非零的正整数：<code>^[1-9]\d*$ 或 ^([1-9][0-9]*)&#123;1,3&#125;$ 或 ^\+?[1-9][0-9]*$</code></li>
+<li>非零的负整数：<code>^\-[1-9][]0-9&quot;*$ 或 ^-[1-9]\d*$</code></li>
+<li>非负整数：<code>^\d+$ 或 ^[1-9]\d*|0$</code></li>
+<li>非正整数：<code>^-[1-9]\d*|0$ 或 ^((-\d+)|(0+))$</code></li>
+<li>非负浮点数：<code>^\d+(\.\d+)?$ 或 ^[1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0$</code></li>
+<li>非正浮点数：<code>^((-\d+(\.\d+)?)|(0+(\.0+)?))$ 或 ^(-([1-9]\d*\.\d*|0\.\d*[1-9]\d*))|0?\.0+|0$</code></li>
+<li>正浮点数：<code>^[1-9]\d*\.\d*|0\.\d*[1-9]\d*$ 或 ^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$</code></li>
+<li>负浮点数：<code>^-([1-9]\d*\.\d*|0\.\d*[1-9]\d*)$ 或 ^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$</code></li>
+<li>浮点数：<code>^(-?\d+)(\.\d+)?$ 或 ^-?([1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0)$</code></li>
+</ol>
+<h2 id="二、校验字符的表达式"><a href="#二、校验字符的表达式" class="headerlink" title="二、校验字符的表达式"></a><strong>二、校验字符的表达式</strong></h2><ol>
+<li>汉字：<code>^[\u4e00-\u9fa5]&#123;0,&#125;$</code></li>
+<li>英文和数字：<code>^[A-Za-z0-9]+$ 或 ^[A-Za-z0-9]&#123;4,40&#125;$</code></li>
+<li>长度为3-20的所有字符：<code>^.&#123;3,20&#125;$</code></li>
+<li>由26个英文字母组成的字符串：<code>^[A-Za-z]+$</code></li>
+<li>由26个大写英文字母组成的字符串：<code>^[A-Z]+$</code></li>
+<li>由26个小写英文字母组成的字符串：<code>^[a-z]+$</code></li>
+<li>由数字和26个英文字母组成的字符串：<code>^[A-Za-z0-9]+$</code></li>
+<li>由数字、26个英文字母或者下划线组成的字符串：<code>^\w+$ 或 ^\w&#123;3,20&#125;</code></li>
+<li>中文、英文、数字包括下划线：<code>^[\u4E00-\u9FA5A-Za-z0-9_]+$</code></li>
+<li>中文、英文、数字但不包括下划线等符号：<code>^[\u4E00-\u9FA5A-Za-z0-9]+$ 或 ^[\u4E00-\u9FA5A-Za-z0-9]&#123;2,20&#125;$</code></li>
+<li>可以输入含有<code>^%&amp;&#39;,;=?$\&quot;</code>等字符：<code>[^%&amp;&#39;,;=?$\x22]+</code></li>
+<li>禁止输入含有<del>的字符`[^</del>\x22]+`</li>
+</ol>
+<h3 id="其它："><a href="#其它：" class="headerlink" title="其它："></a><strong>其它：</strong></h3><p><code>.*</code>匹配除 <code>\n</code> 以外的任何字符。<code>/[\u4E00-\u9FA5]/</code> 汉字<code>/[\uFF00-\uFFFF]/</code> 全角符号<code>/[\u0000-\u00FF]/</code> 半角符号</p>
+<h2 id="三、特殊需求表达式"><a href="#三、特殊需求表达式" class="headerlink" title="三、特殊需求表达式"></a><strong>三、特殊需求表达式</strong></h2><ol>
+<li>Email地址：<code>^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$</code></li>
+<li>域名：<code>[a-zA-Z0-9][-a-zA-Z0-9]&#123;0,62&#125;(/.[a-zA-Z0-9][-a-zA-Z0-9]&#123;0,62&#125;)+/.?</code></li>
+<li>InternetURL：<code>[a-zA-z]+://[^\s]* 或 ^http://([\w-]+\.)+[\w-]+(/[\w-./?%&amp;=]*)?$</code></li>
+<li>手机号码：<code>^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d&#123;8&#125;$</code></li>
+<li>电话号码(“XXX-XXXXXXX”、”XXXX-XXXXXXXX”、”XXX-XXXXXXX”、”XXX-XXXXXXXX”、”XXXXXXX”和”XXXXXXXX)：<code>^(\(\d&#123;3,4&#125;-)|\d&#123;3.4&#125;-)?\d&#123;7,8&#125;$</code></li>
+<li>国内电话号码(0511-4405222、021-87888822)：<code>\d&#123;3&#125;-\d&#123;8&#125;|\d&#123;4&#125;-\d&#123;7&#125;</code></li>
+<li>身份证号(15位、18位数字)：<code>^\d&#123;15&#125;|\d&#123;18&#125;$</code></li>
+<li>短身份证号码(数字、字母x结尾)：<code>^([0-9])&#123;7,18&#125;(x|X)?$ 或 ^\d&#123;8,18&#125;|[0-9x]&#123;8,18&#125;|[0-9X]&#123;8,18&#125;?$</code></li>
+<li>帐号是否合法(字母开头，允许5-16字节，允许字母数字下划线)：<code>^[a-zA-Z][a-zA-Z0-9_]&#123;4,15&#125;$</code></li>
+<li>密码(以字母开头，长度在6~18之间，只能包含字母、数字和下划线)：<code>^[a-zA-Z]\w&#123;5,17&#125;$</code></li>
+<li>强密码(必须包含大小写字母和数字的组合，不能使用特殊字符，长度在8-10之间)：<code>^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).&#123;8,10&#125;$</code></li>
+<li>日期格式：<code>^\d&#123;4&#125;-\d&#123;1,2&#125;-\d&#123;1,2&#125;</code></li>
+<li>一年的12个月(01～09和1～12)：<code>^(0?[1-9]|1[0-2])$</code></li>
+<li>一个月的31天(01～09和1～31)：<code>^((0?[1-9])|((1|2)[0-9])|30|31)$</code></li>
+</ol>
+<h3 id="钱的输入格式："><a href="#钱的输入格式：" class="headerlink" title="钱的输入格式："></a><strong>钱的输入格式：</strong></h3><p>1.有四种钱的表示形式我们可以接受:”10000.00” 和 “10,000.00”, 和没有 “分” 的 “10000” 和 “10,000”：<code>^[1-9][0-9]*$</code>2.这表示任意一个不以0开头的数字,但是,这也意味着一个字符”0”不通过,所以我们采用下面的形式：<code>^(0|[1-9][0-9]*)$</code>3.一个0或者一个不以0开头的数字.我们还可以允许开头有一个负号：<code>^(0|-?[1-9][0-9]*)$</code>4.这表示一个0或者一个可能为负的开头不为0的数字.让用户以0开头好了.把负号的也去掉,因为钱总不能是负的吧.下面我们要加的是说明可能的小数部分：<code>^[0-9]+(.[0-9]+)?$</code>5.必须说明的是,小数点后面至少应该有1位数,所以”10.”是不通过的,但是 “10” 和 “10.2” 是通过的：<code>^[0-9]+(.[0-9]&#123;2&#125;)?$</code>6.这样我们规定小数点后面必须有两位,如果你认为太苛刻了,可以这样：<code>^[0-9]+(.[0-9]&#123;1,2&#125;)?$</code>7.这样就允许用户只写一位小数.下面我们该考虑数字中的逗号了,我们可以这样：<code>^[0-9]&#123;1,3&#125;(,[0-9]&#123;3&#125;)*(.[0-9]&#123;1,2&#125;)?$</code>8.1到3个数字,后面跟着任意个 逗号+3个数字,逗号成为可选,而不是必须：<code>^([0-9]+|[0-9]&#123;1,3&#125;(,[0-9]&#123;3&#125;)*)(.[0-9]&#123;1,2&#125;)?$</code>（搜索公众号Java后端，回复“2021”，送你一份Java面试题宝典）</p>
+<blockquote>
+<p>备注：这就是最终结果了,别忘了<code>+</code>可以用<code>*</code>替代如果你觉得空字符串也可以接受的话(奇怪,为什么?)最后,别忘了在用函数时去掉去掉那个反斜杠,一般的错误都在这里</p>
+</blockquote>
+<ol>
+<li>xml文件：<code>^([a-zA-Z]+-?)+[a-zA-Z0-9]+\\.[x|X][m|M][l|L]$</code></li>
+<li>中文字符的正则表达式：<code>[\u4e00-\u9fa5]</code></li>
+<li>双字节字符：<code>[^\x00-\xff]</code> (包括汉字在内，可以用来计算字符串的长度(一个双字节字符长度计2，ASCII字符计1))</li>
+<li>空白行的正则表达式：<code>\n\s*\r</code> (可以用来删除空白行)</li>
+<li>HTML标记的正则表达式：<code>&lt;(\S*?)[^&gt;]*&gt;.*?&lt;/\1&gt;|&lt;.*? /&gt;</code> (网上流传的版本太糟糕，上面这个也仅仅能部分，对于复杂的嵌套标记依旧无能为力)</li>
+<li>首尾空白字符的正则表达式：<code>^\s*|\s*$或(^\s*)|(\s*$)</code> (可以用来删除行首行尾的空白字符(包括空格、制表符、换页符等等)，非常有用的表达式)</li>
+<li>腾讯QQ号：<code>[1-9][0-9]&#123;4,&#125;</code> (腾讯QQ号从10000开始)</li>
+<li>中国邮政编码：<code>[1-9]\d&#123;5&#125;(?!\d)</code> (中国邮政编码为6位数字)</li>
+<li>IP地址：<code>\d+\.\d+\.\d+\.\d+</code> (提取IP地址时有用)</li>
+<li>IP地址：<code>((?:(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d)\\.)&#123;3&#125;(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d))</code></li>
+<li>IP-v4地址：<code>\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.)&#123;3&#125;(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b</code> (提取IP地址时有用)</li>
+<li>校验IP-v6地址:<code>(([0-9a-fA-F]&#123;1,4&#125;:)&#123;7,7&#125;[0-9a-fA-F]&#123;1,4&#125;|([0-9a-fA-F]&#123;1,4&#125;:)&#123;1,7&#125;:|([0-9a-fA-F]&#123;1,4&#125;:)&#123;1,6&#125;:[0-9a-fA-F]&#123;1,4&#125;|([0-9a-fA-F]&#123;1,4&#125;:)&#123;1,5&#125;(:[0-9a-fA-F]&#123;1,4&#125;)&#123;1,2&#125;|([0-9a-fA-F]&#123;1,4&#125;:)&#123;1,4&#125;(:[0-9a-fA-F]&#123;1,4&#125;)&#123;1,3&#125;|([0-9a-fA-F]&#123;1,4&#125;:)&#123;1,3&#125;(:[0-9a-fA-F]&#123;1,4&#125;)&#123;1,4&#125;|([0-9a-fA-F]&#123;1,4&#125;:)&#123;1,2&#125;(:[0-9a-fA-F]&#123;1,4&#125;)&#123;1,5&#125;|[0-9a-fA-F]&#123;1,4&#125;:((:[0-9a-fA-F]&#123;1,4&#125;)&#123;1,6&#125;)|:((:[0-9a-fA-F]&#123;1,4&#125;)&#123;1,7&#125;|:)|fe80:(:[0-9a-fA-F]&#123;0,4&#125;)&#123;0,4&#125;%[0-9a-zA-Z]&#123;1,&#125;|::(ffff(:0&#123;1,4&#125;)&#123;0,1&#125;:)&#123;0,1&#125;((25[0-5]|(2[0-4]|1&#123;0,1&#125;[0-9])&#123;0,1&#125;[0-9])\\.)&#123;3,3&#125;(25[0-5]|(2[0-4]|1&#123;0,1&#125;[0-9])&#123;0,1&#125;[0-9])|([0-9a-fA-F]&#123;1,4&#125;:)&#123;1,4&#125;:((25[0-5]|(2[0-4]|1&#123;0,1&#125;[0-9])&#123;0,1&#125;[0-9])\\.)&#123;3,3&#125;(25[0-5]|(2[0-4]|1&#123;0,1&#125;[0-9])&#123;0,1&#125;[0-9]))</code></li>
+<li>子网掩码：<code>((?:(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d)\\.)&#123;3&#125;(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d))</code></li>
+<li>校验日期:<code>^(?:(?!0000)[0-9]&#123;4&#125;-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]&#123;2&#125;(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$</code>(“yyyy-mm-dd“ 格式的日期校验，已考虑平闰年。)</li>
+<li>抽取注释：<code>&lt;!--(.*?)--&gt;</code></li>
+<li>查找CSS属性:<code>^\\s*[a-zA-Z\\-]+\\s*[:]&#123;1&#125;\\s[a-zA-Z0-9\\s.#]+[;]&#123;1&#125;</code></li>
+<li>提取页面超链接:<code>(&lt;a\\s*(?!.*\\brel=)[^&gt;]*)(href=&quot;https?:\\/\\/)((?!(?:(?:www\\.)?&#39;.implode(&#39;|(?:www\\.)?&#39;, $follow_list).&#39;))[^&quot; rel=&quot;external nofollow&quot; ]+)&quot;((?!.*\\brel=)[^&gt;]*)(?:[^&gt;]*)&gt;</code></li>
+<li>提取网页图片:<code>\\&lt; *[img][^\\\\&gt;]*[src] *= *[\\&quot;\\&#39;]&#123;0,1&#125;([^\\&quot;\\&#39;\\ &gt;]*)</code></li>
+<li>提取网页颜色代码:<code>^#([A-Fa-f0-9]&#123;6&#125;|[A-Fa-f0-9]&#123;3&#125;)$</code></li>
+<li>文件扩展名效验:<code>^([a-zA-Z]\\:|\\\\)\\\\([^\\\\]+\\\\)*[^\\/:*?&quot;&lt;&gt;|]+\\.txt(l)?$</code></li>
+<li>判断IE版本：<code>^.*MSIE [5-8](?:\\.[0-9]+)?(?!.*Trident\\/[5-9]\\.0).*$</code></li>
+</ol>
+<h3 id="附表"><a href="#附表" class="headerlink" title="附表:"></a><strong>附表:</strong></h3><p><img src="https://pic4.zhimg.com/80/v2-41f553c797418f21386060f73ec4a4f7_720w.jpg" alt="img"></p>
+<p><img src="https://pic4.zhimg.com/80/v2-c82ff5e8e09fe2d9acd888579abfab13_720w.jpg" alt="img"></p>
+<p><img src="https://pic1.zhimg.com/80/v2-c5d119d9ced1c67a22c153d115c72178_720w.jpg" alt="img"></p>
+<p><img src="https://pic4.zhimg.com/80/v2-df2238306f5794d3832cb13f7ea11637_720w.jpg" alt="img"></p>
+<p><img src="https://pic1.zhimg.com/80/v2-7746283bf2f597cd88581ebaef64a344_720w.jpg" alt="img"></p>
+<p><img src="https://pic3.zhimg.com/80/v2-d10eceabeb9ded9cb1d5d9e8e3518112_720w.jpg" alt="img"></p>
+<p><img src="https://pic4.zhimg.com/80/v2-96e30e04cf50d2ed45f496fbf6a9869f_720w.jpg" alt="img"></p>
+<p><img src="https://pic3.zhimg.com/80/v2-7cc8eb2fd4f7eeee0f48d98fff626f4a_720w.jpg" alt="img"></p>
+<p><img src="https://pic2.zhimg.com/80/v2-2bd5ad924d1ff022500e176ce521e925_720w.jpg" alt="img"></p>
+<p><img src="https://pic4.zhimg.com/80/v2-89cc363fe8b5fd55483a63d46fd06d9f_720w.jpg" alt="img"></p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2021/10/27/8点建议助你写出优雅的JAVA代码/"><span>8点建议助你写出优雅的JAVA代码</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2021/10/27/8点建议助你写出优雅的JAVA代码/" rel="bookmark">
+        <time class="entry-date published" datetime="2021-10-27T07:24:44.000Z">
+          2021-10-27
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>在每一位刚入行的程序员的心中，编写程序都是一门神圣的艺术创作。他们无不希望自己的代码作品既简洁清晰，又可读性强，而且还具有一定的容错能力。本文将为您带来七点建议和技巧，以帮助您编写出简洁、干练的 Java 代码。其中的有些可能会让你觉得有些不可思议，但是请相信我，如下的每一条我都亲身实践过的。</p>
+<h3 id="1-使用-IntelliJ-IDEA-作为您的集成开发环境-IDE"><a href="#1-使用-IntelliJ-IDEA-作为您的集成开发环境-IDE" class="headerlink" title="1.使用 IntelliJ IDEA 作为您的集成开发环境 (IDE)"></a>1.使用 IntelliJ IDEA 作为您的集成开发环境 (IDE)</h3><p>虽然我已经使用了六年的 Eclipse 和三年的 NetBeans，而且我仍然偶尔会使用到它们，但是如今的大部分时间，我只使用 IntelliJ IDEA。我并不是想在这里展开有关 IDE 的大讨论，而只是想告诉您，<strong>IDEA 能够根据其自有的最佳整合实践标准，持续提示您写出更短、更好、更简洁的代码。</strong></p>
+<p>您只需要按下 Alt + Enter 组合键，它就会自动开始为您工作了。在大多数时候，IntelliJ IDEA 能够为您提供各种智能且实用的代码建议。当然，您也可以向它学到不同的编程知识与技巧。</p>
+<p>另外，<strong>推荐使用 IDEA 的快捷键来加快编码速度</strong>， IDEA 有很多非常方便的快捷键和功能，用的多了自然就熟悉了！</p>
+<p>为了更好地获取 IDEA 的服务性能，您最好在自己的电脑上采用固态硬盘 (SSD)。就我自己的那台旧式笔记本电脑而言，由于使用的是传统硬盘 (HDD)，它已无法顺畅地运行 IDEA 了。因此我个人建议您至少使用一颗 256 GB 大小的固态硬盘。</p>
+<h3 id="2-使用-JDK-8-或更高版本"><a href="#2-使用-JDK-8-或更高版本" class="headerlink" title="2.使用 JDK 8 或更高版本"></a>2.使用 JDK 8 或更高版本</h3><p><strong>JDK 8 及其更高版本引入了诸如：lambda 表达式 (lambda expression，一种匿名函数)、功能接口、流式接口 (Stream APIs，提供更为可读的源代码实现方法) 等许多新的功能，这些都有助于您写出更简短、更高性能的 Java 代码。</strong></p>
+<p>当然，您并不需要去逐一地记住这些功能，因为前面提到的 IDEA 会帮助您在实际编程的过程中，实现这些功能与服务。这也就是为什么我首先向您建议使用 IDEA 的原因。</p>
+<p>如果你对 Java8 新特性还不了解的话，可以查看 Java 入门教程：<a target="_blank" rel="noopener" href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/What&#39;s%20New%20in%20JDK8/Java8Tutorial.md">https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/What&#39;s%20New%20in%20JDK8/Java8Tutorial.md</a> ，如果你想深入 Java8 新特性，我可以推荐你一些不错的学习资源：<a target="_blank" rel="noopener" href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/What&#39;s%20New%20in%20JDK8/Java8%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90.md">https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/What&#39;s%20New%20in%20JDK8/Java8%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90.md</a></p>
+<h3 id="3-使用-Maven-Gradle"><a href="#3-使用-Maven-Gradle" class="headerlink" title="3.使用 Maven/Gradle"></a>3.使用 Maven/Gradle</h3><p>请使用 Maven(一个采用纯 Java 编写的开源项目管理工具，请参见) 或 Gradle(一个基于 Apache Ant 和 Maven 的项目自动化构建工具，请参见) 来管理代码中的依赖关系，以及构建和部署自己的项目。</p>
+<p>大部分 Java 后端开发人员都用的是 Maven，或许是因为几乎所有 Java 开发者都熟悉 XML。下面我们来看看 Maven 能为我们做什么。</p>
+<p><strong>Maven 能为我们做什么？</strong></p>
+<ol>
+<li>我们可以使用 maven 轻松构建项目。</li>
+<li>我们可以使用 maven 的帮助轻松添加项目的 jar 和其他依赖项。</li>
+<li>Maven 提供项目信息（日志文档，依赖列表，单元测试报告等）</li>
+<li>在更新 JAR 和其他依赖项的中央存储库时，Maven 对项目非常有帮助。</li>
+<li>在 Maven 的帮助下，我们可以将任意数量的项目构建为输出类型，如 JAR，WAR 等，而无需执行任何脚本编写。</li>
+<li>使用 Maven，我们可以轻松地将我们的项目与源代码控制系统（例如 Subversion 或 Git）集成。</li>
+</ol>
+<h3 id="4-使用-Lombok"><a href="#4-使用-Lombok" class="headerlink" title="4.使用 Lombok"></a>4.使用 Lombok</h3><p>是时候向<code>setter/getter</code>、<code>ashcode/equals</code>、以及<code>constructors/toString</code>等样板式代码 (boilerplate code) 说再见了，您只需要一个注解： <code>@Data</code> 就能统统搞定了。</p>
+<p>Lombok 是一款可以通过简单的注解形式，来帮助开发者简化并消除 Java 代码臃肿的工具 (具体请参见)。它不但能够减少您的代码编写量，还能够帮助您打理那些生成的字节码。</p>
+<h3 id="5-编写单元测试"><a href="#5-编写单元测试" class="headerlink" title="5.编写单元测试"></a>5.编写单元测试</h3><p>可测试的代码通常意味着在组织结构上具有更合理、更简洁的代码质量。因为它会驱使您去事先管理好各个类之间的关系、各种方法的访问级别、以及其他方面。我甚至发现：<strong>即使是最小的单元测试也能够促进更快、更便捷的开发进程，进而能够让自己写出更加短、平、快的 Java 代码。</strong></p>
+<p>当然在现实开发工作中，您总会听到一些诸如“我根本没有时间来编写单元测试”或“项目时间节点将至，不要浪费时间些单元测试了”之类的反对意见。这些听起来貌似很合理，但是根据我的经验，在多数情况下，事实并非如此。</p>
+<p>如果您没有时间去编写单元测试，那您是否有更多的时间，去修复代码中那些可见、或不可见的 bug 呢?如果跳过了单元测试，那些仓促完成的代码将无法保证稳定性。特别对于一些新的代码变更而言，您完全无法通过及时的反馈途径，知晓那些新产生的代码是否存在着错误隐患，是否会在将来运行的某个特定场景中产生不可预知的异常问题。</p>
+<p>一般而言，Junit 和 TestNG 是两款非常优秀的 Java 应用、及单元测试框架。而我个人则更喜欢使用 TestNG。</p>
+<h3 id="6-重构-常见-但也很慢"><a href="#6-重构-常见-但也很慢" class="headerlink" title="6.重构:常见,但也很慢"></a>6.重构:常见,但也很慢</h3><p><strong>简洁干练的 Java 程序代码从来不是一蹴而就的，它往往需要您进行反复地琢磨与改进。通过逐行进行代码重构、和运行各种测试用例，您可以确保自己的更改不会破坏既有代码的正确功能。</strong></p>
+<p>同样，IDEA 极大地提供了对于代码重构的支持，其中包括提取方法 (extract method，将某个大的函数拆分为多个小函数)、重命名、内联 (inline) 等功能。</p>
+<p>当然，如果您对代码重构是什么，以及它的作用不太了解的话，Martin Fowler 的经典著作《重构：改善既有代码的设计 (第 2 版)，Refactoring: Improving the Design of Existing Code (2nd Edition)》绝对是一本您必备的参考书。</p>
+<h3 id="7-注意代码规范"><a href="#7-注意代码规范" class="headerlink" title="7.注意代码规范"></a>7.注意代码规范</h3><p>从学习编程的第一天起就要养成不错的编码习惯，包、类、方法的命名这些是最基本的。</p>
+<p>推荐阅读：</p>
+<ul>
+<li>阿里巴巴 Java 开发手册（详尽版）<a target="_blank" rel="noopener" href="https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E8%AF%A6%E5%B0%BD%E7%89%88%EF%BC%89.pdf">https://github.com/alibaba/p3c/blob/master/阿里巴巴 Java 开发手册（详尽版）.pdf</a></li>
+<li>Google Java 编程风格指南：<a target="_blank" rel="noopener" href="http://www.hawstein.com/posts/google-java-style.html">http://www.hawstein.com/posts/google-java-style.html</a></li>
+<li>Effective Java 第三版中文版: <a target="_blank" rel="noopener" href="https://legacy.gitbook.com/book/jiapengcai/effective-java">https://legacy.gitbook.com/book/jiapengcai/effective-java</a></li>
+</ul>
+<h3 id="8-定期联络客户，以获取他们的反馈"><a href="#8-定期联络客户，以获取他们的反馈" class="headerlink" title="8.定期联络客户，以获取他们的反馈"></a>8.定期联络客户，以获取他们的反馈</h3><p>最后一点，可能也是最重要的：客户花钱让您通过编写代码，来解决他们的问题、满足他们的需求、并解决他们的痛点。然而，您可能在不知不觉中花费了太多的时间，去实现自以为重要、却对客户无关紧要的特殊功能，进而忽略了代码整体的健壮性和可维护性。那么，我们怎么才能够尽早地发现该问题呢?请保持与客户经常联系，以尽早地获取他们的反馈。</p>
+<p>话说回来，知易行难，即使是富有经验的产品经理也不一定能在较短的时间内领悟需求的真谛，何况是那些满脑子只注重功能实现的“码农”们呢?</p>
+<p>因此，一个实用的建议是：<strong>如果您不能直接联络到最终用户的话，请尽量与该系统的产品经理、或运维人员进行礼貌、且频繁的沟通。磨刀不误砍柴工，这些时间的投入对于后期时间的节省是绝对值得的。</strong></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>在过去的多年编程实践和项目应用中，我一直受益于上述七点心得。在此，我希望它们也同样能给您的代码工作带来帮助。祝您编程愉快!</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2021/10/26/基于springboot的在线教育项目/"><span>基于springboot的在线教育项目</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2021/10/26/基于springboot的在线教育项目/" rel="bookmark">
+        <time class="entry-date published" datetime="2021-10-26T06:57:54.000Z">
+          2021-10-26
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>TODO:</p>
+<p>后台Banner增删改查</p>
+<p>后台美化</p>
+<p>课程条件查询</p>
+<h3 id="技术前缀"><a href="#技术前缀" class="headerlink" title="技术前缀:"></a>技术前缀:</h3><p><img src="https://i.loli.net/2021/10/28/VL23fJHFGZxB74u.png" alt="image-20211026163606088"></p>
+<h3 id="项目实现功能模块"><a href="#项目实现功能模块" class="headerlink" title="项目实现功能模块:"></a>项目实现功能模块:</h3><p><img src="https://i.loli.net/2021/10/28/bK4xwMVOrdGfFIa.png" alt="image-20211028212635587"></p>
+<p><img src="https://i.loli.net/2021/10/28/I6SBG2DQtm3YOLA.png" alt="image-20211026165118294"></p>
+<h3 id="项目使用技术"><a href="#项目使用技术" class="headerlink" title="项目使用技术:"></a>项目使用技术:</h3><p><strong>项目采用 前后端分离开发</strong></p>
+<p><img src="https://i.loli.net/2021/10/28/cfFWGrvHx7sQzgR.png" alt="image-20211026165431183"></p>
+<p><img src="https://i.loli.net/2021/10/28/iey7kcDqsjufUGp.png" alt="image-20211026171255870"></p>
+<h3 id="项目工程结构："><a href="#项目工程结构：" class="headerlink" title="项目工程结构："></a>项目工程结构：</h3><p><img src="https://i.loli.net/2021/10/28/c4BasdTP9rk1SKL.png" alt="image-20211027175934140"></p>
+<h6 id="开发讲师管理模块后端"><a href="#开发讲师管理模块后端" class="headerlink" title="开发讲师管理模块后端"></a>开发讲师管理模块后端</h6><p>1.创建数据库，创建讲师数据库表</p>
+<h3 id="开发过程中遇到的错误"><a href="#开发过程中遇到的错误" class="headerlink" title="开发过程中遇到的错误:"></a>开发过程中遇到的错误:</h3><p>1.在编写讲师模块的时候，第一次启动测试出现问题：</p>
+<p>报错信息<img src="https://i.loli.net/2021/10/28/NwEpIS3YrQqgXA4.png" alt="image-20211028204749366"></p>
+<p>错误原因：数据源出现错误</p>
+<p>疑点：<img src="https://i.loli.net/2021/10/28/n2LaxAPkQCmBzgG.png" alt="image-20211028212357059"></p>
+<p>日志中显示8080端口，但是我的配置文件中明明填写了8001端口和URL</p>
+<p><img src="https://i.loli.net/2021/10/28/yWCugmURo4b9hDJ.png" alt="image-20211028212445871"></p>
+<p>猜测：配置文件未生效</p>
+<p>解决：配置文件必须名为:application.properties才能自动装配，不能随意起名</p>
+<p>更改配置文件名字后，启动成功</p>
+<p>2.swagger配置后无限弹窗，打不开页面</p>
+<p><img src="https://i.loli.net/2021/10/29/ctUHo6OVTrh7ASd.png" alt="image-20211029222600807"></p>
+<p>一番检查发现代码没有出现错误，重启了一下idea，问题解决了</p>
+<p>缘故：每次更新maven项目的pom文件要clean一下缓存</p>
+<p>3.因为idea异常关闭，端口被占用</p>
+<p><img src="https://i.loli.net/2021/10/30/nt8oV6Uw2ZIY9vS.png" alt="image-20211030142808944"></p>
+<p>原因：因为idea异常的关闭，上次启动的程序未能杀死，再次打开程序后端口被占用</p>
+<p>解决办法：</p>
+<p>打开cmd输入<code>netstat -ano</code></p>
+<p><img src="https://i.loli.net/2021/10/30/DRhHL78yvZYQGsz.png" alt="image-20211030143015475"></p>
+<p>找到被占用的端口，记住UID，用任务管理器结束它</p>
+<p><img src="https://i.loli.net/2021/10/30/pkUBhJl5AwaQnKe.png" alt="image-20211030143123608"></p>
+<p>4.npm下载依赖失败</p>
+<p><img src="https://i.loli.net/2021/10/31/rTGPRLkQwomYnaJ.png" alt="image-20211031210529072"></p>
+<p>原因<br>因为npm7.x对某些事情比npm6.x更严格。通常，最简单的解决方法是将–legacy-peer-deps标志传递给npm(e.g.，npm i –legacy-peer-deps），或者使用npm@6。</p>
+<p>如果这不能立即起作用，也许可以先删除node_modules和package-lock.json。它们将被重新创建。</p>
+<p><img src="https://i.loli.net/2021/10/31/HAcDlUn9mLJQeFr.png" alt="image-20211031212552685"></p>
+<p>解决了上面那个错误又报了一个错误，原来是安装node-sass的时候依赖缺少</p>
+<p>因为node-sass需要调用操作系统的一些东西，所有需要环境的支持。提示需要安装python2.7环境</p>
+<p><code>npm install --global windows-build-tools </code> 之后完美解决</p>
+<p>5.前端调用后端接口出现问题</p>
+<p>当使用get方法请求数据的时候，后端没法用requestbody注解接收到数据，此时要把前端和后端的请求方式都改成post，用json来传输数据</p>
+<p>6.在写课程列表的时候，怎么写都一直弹这个错误</p>
+<p><img src="https://i.loli.net/2021/11/08/Ry7bSZFhsrzEKTa.png" alt="image-20211108205949179"></p>
+<p>经过多次添加断点，添加console.log发现</p>
+<p>原因：表格显示需要数组包含对象的形式，每个对象是一行数据，拿到的数据格式不对。</p>
+<p>解决措施：确保拿到的表格数据显示类型为数组。</p>
+<p>7.在写阿里云视频点播服务的时候，由于某个jar包未开源，要手动用maven下载，但是输入maven指令后报错</p>
+<p><img src="https://i.loli.net/2021/11/09/Y8kP7gqjoAHSipU.png" alt="image-20211109214613002"></p>
+<p>原因：需要权限</p>
+<p>解决：用管理员权限打开 不要用右键打开</p>
+<p>8.阿里云点播报错</p>
+<p><img src="https://i.loli.net/2021/11/09/FoVAY3iLpGHXmfJ.png" alt="image-20211109225749445"></p>
+<p>原因:阿里云要用到BASE64Encoder这个类，只有jdk8之前能用，jdk8以后的版本用不了</p>
+<p>解决：替换回jdk8</p>
+<p>9.redis连接报错</p>
+<p><img src="https://i.loli.net/2021/11/12/xhWE6Dkz5SwPcyM.png" alt="image-20211112161030858"></p>
+<p>注意到下列语句DENIED Redis is running in protected mode because protected mode is enabled, no bind address was specified</p>
+<p>可能的原因有以下几条：</p>
+<p>1.云服务器没有放行6379端口</p>
+<p>2.安全模式未设置<code>CONFIG SET protected-mode no</code></p>
+<p>3.设置完没重启redis服务</p>
+<p>解决</p>
+<p>​    在云服务器的安全组开放端口，</p>
+<p>10.Handler dispatch failed； nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/**</p>
+<p>原因：是由于缺少jaxb-api包导致的。在Java 8以及以前的版本，是默认包含jaxb这个jar包的；但是在java SE 9.0就不再包含着个包了，如果使用则需要手动引进。</p>
+<p>解决：手动导包</p>
+<p>11.Unexpected token o in JSON at position 1</p>
+<p><img src="https://i.loli.net/2021/11/13/peTYS8WfVNwOC1X.png" alt="image-20211113135304277"></p>
+<p><img src="https://i.loli.net/2021/11/13/AYXgFkoSfOKm1qi.png" alt="image-20211113135311038"></p>
+<p>刚写完登录页面token转换，弹出这个页面</p>
+<p>原因:因为被转换的值不符合JSON格式而造成的，在对对象赋值的时候自动调用了对象toStrong()导致传递cookie变成了[object Object]，所以在赋值的时候先加上JSON.stringify方法避免toString的调用</p>
+<p>解决办法：</p>
+<p><img src="https://i.loli.net/2021/11/13/wyOmFqzoeXvRSs5.png" alt="image-20211113142927378"></p>
+<p>在设置cookie的时候用JSON.stringify方法</p>
+<p>12.org.springframework.http.converter.HttpMessageConversionException: Type definition error</p>
+<p><img src="https://i.loli.net/2021/11/14/SYTED69IAPUF7ou.png" alt="image-20211114101739873"></p>
+<p>原因:忘记添加getset方法了</p>
+<p>解决办法：在实体类上加上@Data</p>
+<p>13.<img src="https://s2.loli.net/2021/12/22/x8Kdj2OSDRgInBq.png" alt="image-20211222230952043">原因是由于缺少 jaxb-api 包导致的。<br>在Java 8以及以前的版本，是默认包含jaxb这个jar包的；原因是java9以后不再包含这个class。<br>解决方式一：<br>降低JDK 版本到 JDK 8<br>解决方式二:<br>手动加入 jaxb-api 依赖Jar包：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.xml.bind<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jaxb-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2021/10/25/计算机书籍推荐/"><span>计算机书籍推荐</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2021/10/25/计算机书籍推荐/" rel="bookmark">
+        <time class="entry-date published" datetime="2021-10-25T08:03:58.000Z">
+          2021-10-25
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+
+<nav class="pagination">
+  
+  
+  <a href="/page/2/" class="pagination-next">下一页</a>
+  
+</nav>
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2022 PokerAAA
+    
+  </p>
+</footer>
+    
+    
   </div>
 </div>
-    
-
-    
-  </main>
-
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <span>PokerAAA</span> <i class="iconfont icon-love"></i> <span>黎博凯</span> 
-  </div>
-  
-
-  
-
-  
-</footer>
-
-
-  <!-- SCRIPTS -->
-  
-  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-<!-- Plugins -->
-
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-      typing(title)
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
-<script  src="/js/boot.js" ></script>
-
-
 </body>
 </html>
